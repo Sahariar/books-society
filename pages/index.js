@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
+import PricingPlans from '../components/HomePage/PricingPlans'
+import ApplyForTeacher from '../components/HomePage/ApplyForTeacher'
+import HowDoesItWorks from '../components/HomePage/HowDoesItWorks'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +20,9 @@ export default function Home() {
       </Head>
       <main className='bg-base-100'>
         <Header></Header>
+          <HowDoesItWorks></HowDoesItWorks>
+          <PricingPlans></PricingPlans>
+          <ApplyForTeacher></ApplyForTeacher>
         <Footer></Footer>
       </main>
     </>
