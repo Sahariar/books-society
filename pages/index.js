@@ -6,6 +6,10 @@ import Footer from '../components/Shared/Footer'
 import PricingPlans from '../components/HomePage/PricingPlans'
 import ApplyForTeacher from '../components/HomePage/ApplyForTeacher'
 import HowDoesItWorks from '../components/HomePage/HowDoesItWorks'
+import BrandArea from '../components/HomePage/BrandArea'
+import Stats from '../components/HomePage/Stats'
+import Policy from '../components/HomePage/Policy'
+import NewsSletter from '../components/HomePage/NewsSletter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +27,11 @@ export default function Home() {
           <HowDoesItWorks></HowDoesItWorks>
           <PricingPlans></PricingPlans>
           <ApplyForTeacher></ApplyForTeacher>
+          <Stats></Stats>
+          <Policy></Policy>
+          <BrandArea></BrandArea>
+          <NewsSletter></NewsSletter>
+
         <Footer></Footer>
       </main>
     </>

@@ -11,7 +11,7 @@ const index = () => {
      <link rel="icon" href="/favicon.ico" />
    </Head>
    <Header></Header>
-
+    
    <main>
    <section className="container mx-auto py-10">
      <div className="title-area py-20 bg-gradient-to-r from-primary to-primary/10">
@@ -24,7 +24,6 @@ const index = () => {
          </div>
      </section>
    </main>
-
   <Footer></Footer>
  </>
     );
