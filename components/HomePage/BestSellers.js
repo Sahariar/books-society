@@ -8,6 +8,8 @@ const BestSellers = () => {
                 Best Selling Books
 			</h2>
 			</div>
+
+            
         </section>
     );
 };
