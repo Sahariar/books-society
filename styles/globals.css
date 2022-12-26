@@ -20,6 +20,7 @@ div.swiper-button-next:after {
     display: inline-block;
     border-radius: 16px;
     background: linear-gradient(90deg, #151515cc 0%, rgba(21, 21, 21, 0) 100%);
+}
 body{
     font-family: 'Alegreya', serif;
 }
