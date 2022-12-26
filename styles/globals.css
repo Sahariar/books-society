@@ -10,17 +10,6 @@ div.swiper-button-prev:after {
 div.swiper-button-next:after {
     content: 'none';
 }
-.img-gradient:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    border-radius: 16px;
-    background: linear-gradient(90deg, #151515cc 0%, rgba(21, 21, 21, 0) 100%);
-}
 body{
     font-family: 'Alegreya', serif;
 }
