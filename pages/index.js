@@ -1,8 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import Header from '../components/Shared/Header'
-import Footer from '../components/Shared/Footer'
+import Head from "next/head";
+import Image from "next/image";
+import Header from "../components/Shared/Header";
+import Footer from "../components/Shared/Footer";
+import PricingPlans from "../components/HomePage/PricingPlans";
+import ApplyForTeacher from "../components/HomePage/ApplyForTeacher";
+import HowDoesItWorks from "../components/HomePage/HowDoesItWorks";
+import BooksOfTheMonth from "../components/HomePage/BooksOfTheMonth";
+import BooksCategories from "../components/HomePage/BooksCategories";
+import BestSellers from "../components/HomePage/BestSellers";
 import MainHero from '../components/HomePage/MainHero'
 import Service from '../components/HomePage/Service'
 
