@@ -1,16 +1,14 @@
 import { FaEdit, FaBook, FaPenSquare, FaEnvelopeOpenText, FaAngleRight } from 'react-icons/fa';
 const HowDoesItWorks = () => {
     return (
-        <div className='bg-blue-100'>
+        <div className='bg-blue-100 py-10'>
             <div className="container mx-auto pb-10">
                 <h1 className='text-center pb-16 pt-20 text-4xl font-bold'>
                     How Does It Works
                 </h1>
                 <div className="grid gap-5 grid-cols-2 md:grid-cols-4">
                     <div className="bg-white p-5 rounded-lg shadow-lg howDoesWorks">
-                        <div className="sign">
-                            <FaAngleRight/>
-                        </div>
+                      
                         <div className='flex justify-center items-center h-32'>
                             <span><FaEdit className='text-6xl text-primary' /></span>
                         </div>

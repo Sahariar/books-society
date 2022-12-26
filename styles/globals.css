@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 /* hero section */
-div.swiper-button-prev:after {
+.heroSwiper .swiper-button-prev:after {
     content: 'none';
 }
 
-div.swiper-button-next:after {
+.heroSwiper .swiper-button-next:after {
     content: 'none';
 }
 .img-gradient:after {

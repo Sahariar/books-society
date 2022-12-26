@@ -6,10 +6,10 @@ import { FaBoxOpen } from 'react-icons/fa';
 
 const Service = () => {
     return (
-        <div className='mb-16'>
+        <div className='mb-16 py-10'>
             <section className="m-4 md:m-8 bg-gray-100 text-gray-800">
                 <div className="container mx-auto p-4 my-6 space-y-2 text-center">
-                    <h2 className="text-5xl font-bold">Explore our <br /> awesome <span class="text-blue-500">Services</span></h2>
+                    <h2 className="text-4xl font-bold"> Our Services</h2>
                 </div>
                 <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="flex flex-col items-center p-6">

@@ -22,7 +22,7 @@ const BooksCategories = () => {
 
                         </div>
 					</div>
-					<h2 className="text-2xl text-center font-bold mt-5 cursor-pointer hover:bg-secondary px-4">
+					<h2 className="text-2xl text-center font-bold mt-5 cursor-pointer hover:bg-secondary rounded-xl px-4">
 						Teachers Picks
 					</h2>
 				</div>
