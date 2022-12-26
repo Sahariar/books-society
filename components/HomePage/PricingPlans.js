@@ -5,7 +5,7 @@ const PricingPlans = () => {
             <h1 className='text-center pb-5 pt-20 text-4xl font-bold'>
                     Pricing Plans
             </h1>
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-3 py-10 container mx-auto">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-3 py-10 w-11/12 mx-auto">
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
                     <h2 className="text-center text-4xl">Free Trial</h2>
                     <h4 className='text-xl text-center mt-4'><span className='text-3xl'>$</span> <span className='text-primary text-5xl'>00</span>/7days Trial</h4>
