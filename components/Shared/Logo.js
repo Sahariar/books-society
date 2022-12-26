@@ -23,7 +23,7 @@ const Logo = ({width,height,color}) => {
         transform="translate(1 1)"
       ></path>
     </svg>
-    <span className={`${color} hidden md:block` }>
+    <span className={`${color} hidden md:block logo-title` }>
     Books Society
       </span> 
         </span>
