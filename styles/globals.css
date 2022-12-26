@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.price-plan{
+    transition: all 0.2s ease-in !important;
+}
+.price-plan:hover {
+    transform: translateY(-15px);
+    border-bottom: 5px solid rgb(50, 104, 231);
+}
