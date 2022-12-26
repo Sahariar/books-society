@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
       <main className='bg-base-100'>
         <Header></Header>
-          <HowDoesItWorks></HowDoesItWorks>
           <PricingPlans></PricingPlans>
+          <HowDoesItWorks></HowDoesItWorks>
           <ApplyForTeacher></ApplyForTeacher>
         <Footer></Footer>
       </main>
