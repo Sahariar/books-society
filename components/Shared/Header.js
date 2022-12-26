@@ -83,7 +83,7 @@ const Header = () => {
 						<div className="end hidden lg:block">
 							<div className="flex justify-start space-x-3">
 								<a
-									rel="noopener noreferrer"
+									
 									href="#"
 									title="Facebook"
 									className="flex items-center p-1"
@@ -98,7 +98,7 @@ const Header = () => {
 									</svg>
 								</a>
 								<a
-									rel="noopener noreferrer"
+									
 									href="#"
 									title="Twitter"
 									className="flex items-center p-1"
@@ -112,7 +112,7 @@ const Header = () => {
 									</svg>
 								</a>
 								<a
-									rel="noopener noreferrer"
+									
 									href="#"
 									title="Instagram"
 									className="flex items-center p-1"

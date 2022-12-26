@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import PricingPlans from '../components/HomePage/PricingPlans'
 import ApplyForTeacher from '../components/HomePage/ApplyForTeacher'
 import HowDoesItWorks from '../components/HomePage/HowDoesItWorks'
+import BooksOfTheMonth from '../components/HomePage/BooksOfTheMonth'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
       </Head>
       <main className='bg-base-100'>
         <Header></Header>
+        <BooksOfTheMonth></BooksOfTheMonth>
           <HowDoesItWorks></HowDoesItWorks>
           <PricingPlans></PricingPlans>
           <ApplyForTeacher></ApplyForTeacher>
