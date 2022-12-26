@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import teacher from '../../public/home/teacher.png';
+import teacher from '../../public/home/teacher.jpg';
 
 const ApplyForTeacher = () => {
     return (
-        <div className='bg-blue-100'>
+        <div className='bg-secondary/10'>
             <div className="w-11/12 mx-auto py-20">
                 <div className='grid gap-10 grid-cols-1 md:grid-cols-2'>
                     <div>
-                        <Image className='w-full' src={teacher} alt=""/>
+                        <Image className='w-full rounded-lg' src={teacher} alt=""/>
                     </div>
                     <div>
                         <h1 className='pb-5 text-4xl font-bold'>

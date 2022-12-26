@@ -1,7 +1,7 @@
 import { FaEdit, FaBook, FaPenSquare, FaEnvelopeOpenText, FaAngleRight } from 'react-icons/fa';
 const HowDoesItWorks = () => {
     return (
-        <div className='bg-blue-100'>
+        <div className='bg-secondary/10'>
             <div className="w-11/12 mx-auto pb-10">
                 <h1 className='text-center pb-16 pt-20 text-4xl font-bold'>
                     How Does It Works
