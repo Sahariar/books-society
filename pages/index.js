@@ -11,7 +11,7 @@ import BestSellers from "../components/HomePage/BestSellers";
 import MainHero from '../components/HomePage/MainHero'
 import Service from '../components/HomePage/Service'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
