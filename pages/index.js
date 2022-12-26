@@ -1,18 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/Footer";
-import PricingPlans from "../components/HomePage/PricingPlans";
-import ApplyForTeacher from "../components/HomePage/ApplyForTeacher";
-import HowDoesItWorks from "../components/HomePage/HowDoesItWorks";
-import BooksOfTheMonth from "../components/HomePage/BooksOfTheMonth";
-import BooksCategories from "../components/HomePage/BooksCategories";
-import BestSellers from "../components/HomePage/BestSellers";
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter } from '@next/font/google'
+import Header from '../components/Shared/Header'
+import Footer from '../components/Shared/Footer'
+import MainHero from '../components/HomePage/MainHero'
+import Service from '../components/HomePage/Service'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-	return (
-		<>
-			<Head>
+  return (
+    <>
+   <Head>
 				<title>
 					Book Society- Books Society is place where user can read books and
 					test their skill and communicate with like minded.
@@ -23,6 +22,8 @@ export default function Home() {
 			</Head>
 			<main className="bg-base-100">
 				<Header></Header>
+        <MainHero></MainHero>
+        <Service></Service>
 				<BooksOfTheMonth></BooksOfTheMonth>
 				<BooksCategories></BooksCategories>
         <BestSellers></BestSellers>
@@ -31,6 +32,6 @@ export default function Home() {
 				<ApplyForTeacher></ApplyForTeacher>
 				<Footer></Footer>
 			</main>
-		</>
-	);
+    </>
+  );
 }
