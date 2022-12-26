@@ -16,7 +16,7 @@ const BooksCategories = () => {
                             <Image 
                             src="https://i.ibb.co/Qr5JP34/clem-onojeghuo-0-PPKx-Wt-Yh0g-unsplash.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
                             
 
@@ -32,7 +32,7 @@ const BooksCategories = () => {
                         <Image 
                             src="https://i.ibb.co/wMkTWVz/alex-lvrs-2z-Dw14y-CYqk-unsplash.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
 
                         </div>
@@ -47,7 +47,7 @@ const BooksCategories = () => {
                         <Image 
                             src="https://i.ibb.co/M95dg39/debby-hudson-ERb-JXVw-Afo-unsplash.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
                         </div>
 					</div>
@@ -61,7 +61,7 @@ const BooksCategories = () => {
                         <Image 
                             src="https://i.ibb.co/8s4Xz01/taylor-heery-LNk-Pw-NVAdm-A-unsplash.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
                         </div>
 					</div>
@@ -75,7 +75,7 @@ const BooksCategories = () => {
                         <Image 
                             src="https://i.ibb.co/ngn5vv6/brooke-lark-Gw-Nsgn-SAf-QM-unsplash-1.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
                         </div>
 					</div>
@@ -89,7 +89,7 @@ const BooksCategories = () => {
                         <Image 
                             src="https://i.ibb.co/WVgtHSz/matt-ridley-H-LIL57-PHCc-unsplash.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
                         </div>
 					</div>
@@ -103,7 +103,7 @@ const BooksCategories = () => {
                         <Image 
                             src="https://i.ibb.co/nL7hLVX/roberta-errani-kn-TUUJ8i-P2-U-unsplash.jpg"
                             width="128"
-                            height="128"
+                            height="128" alt="img"
                             />
                         </div>
 					</div>
