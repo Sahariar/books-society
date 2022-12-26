@@ -10,6 +10,9 @@ import BooksCategories from "../components/HomePage/BooksCategories";
 import BestSellers from "../components/HomePage/BestSellers";
 import MainHero from '../components/HomePage/MainHero'
 import Service from '../components/HomePage/Service'
+import Testimonial from "../components/HomePage/Testimonial";
+import Newsletter from "../components/HomePage/Newsletter";
+import SiteStats from "../components/HomePage/SiteStats";
 
 export default function Home() {
   return (
@@ -26,13 +29,16 @@ export default function Home() {
 			<main className="bg-base-100">
 				<Header></Header>
         <MainHero></MainHero>
+        <BooksCategories></BooksCategories>
+        <BooksOfTheMonth></BooksOfTheMonth>
+        <SiteStats></SiteStats>
         <Service></Service>
-				<BooksOfTheMonth></BooksOfTheMonth>
-				<BooksCategories></BooksCategories>
+        <HowDoesItWorks></HowDoesItWorks>
         <BestSellers></BestSellers>
-				<HowDoesItWorks></HowDoesItWorks>
+        <ApplyForTeacher></ApplyForTeacher>
 				<PricingPlans></PricingPlans>
-				<ApplyForTeacher></ApplyForTeacher>
+        <Testimonial></Testimonial>
+        <Newsletter></Newsletter>
 				<Footer></Footer>
 			</main>
     </>

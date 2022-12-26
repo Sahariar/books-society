@@ -60,7 +60,7 @@ const MainHero = () => {
                 loop={true}
                 navigation={true}
                 modules={[Autoplay, Navigation]}
-                className="mySwiper"
+                className="heroSwiper"
             >
 
                 {

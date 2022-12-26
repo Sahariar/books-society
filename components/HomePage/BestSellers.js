@@ -12,7 +12,7 @@ const BestSellers = () => {
 				<div className="grid grid-cols-3 gap-4 mx-auto">
 					<div className="first-section gap-2">
 						<div className="flex flex-row gap-2 mb-10">
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/k9nS3Cq/Living-in-the-Light.jpg"
@@ -27,7 +27,7 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/8bfgSSV/Give-and-Take.jpg"
@@ -44,7 +44,7 @@ const BestSellers = () => {
 							</div>
 						</div>
                         <div className="flex flex-row gap-2 mt-10">
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/XstCs7d/8c763848a19615e858bee15ad828e858.jpg"
@@ -59,7 +59,7 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/tbWSWpS/0a651ad3962e9c34fef58a56e9001f16.jpg"
@@ -77,9 +77,9 @@ const BestSellers = () => {
 						</div>
 					</div>
 
-					<div className="middle-section">
-                    <div className="card bg-base-100 shadow-xl min-h-full">
-								<figure>
+					<div className="middle-section  hover:shadow-xl rounded-xl">
+                    <div className="card border-2 min-h-full">
+								<figure className="pt-2">
 									<Image
 										src="https://i.ibb.co/qYrrxs3/Product-1.jpg"
 										alt="img"
@@ -93,14 +93,14 @@ const BestSellers = () => {
 									</h2>
                                     <h5>Book by Bella Mackie</h5>
                                     <p>
-                                    How To Kill Your Family follows Grace who is on a mission to get rid of the family who wronged her and take their fortune. However, she is currently serving 
+                                    How How To Kill Your Family follows Grace who is on a mission to get rid of the family who wronged her and take their fortune. However, she is currently serving time for a murder that she did not commit. In all honesty, I picked this book up because of the title, I thought it was wonderfully brilliant. I will never forget the look on my mum’s face when I asked her to grab ...
                                     </p>
 								</div>
 							</div>
 					</div>
 					<div className="last-section">
                     <div className="flex flex-row gap-2 mb-10">
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/2czdDHZ/4d35b9671c7a9c43bc332ab2a4d08d4b.jpg"
@@ -115,7 +115,7 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/drMvQ08/0a4d18c8aea6e359314e2c608bb0fa7b.jpg"
@@ -132,7 +132,7 @@ const BestSellers = () => {
 							</div>
 						</div>
                         <div className="flex flex-row gap-2 mt-10">
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/BKmMQ5t/whattosay.jpg"
@@ -147,7 +147,7 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 bg-base-100 shadow-xl">
+							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
 										src="https://i.ibb.co/ZKJqrw9/You-Are-a-Badass.jpg"
