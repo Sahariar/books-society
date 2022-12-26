@@ -9,13 +9,13 @@ module.exports = {
       {
         mytheme: {
         
-"primary": "#0284c7",
+"primary": "#3369e7",
         
-"secondary": "#f39100",
+"secondary": "#facc15",
         
 "accent": "#954a97",
         
-"neutral": "#1f2937",
+"neutral": "#050f2c",
         
 "base-100": "#f5f5f4",
         
