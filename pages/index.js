@@ -24,7 +24,8 @@ export default function Home() {
 			<main className="bg-base-100">
 				<Header></Header>
 				<BooksOfTheMonth></BooksOfTheMonth>
-				
+				<BooksCategories></BooksCategories>
+        <BestSellers></BestSellers>
 				<HowDoesItWorks></HowDoesItWorks>
 				<PricingPlans></PricingPlans>
 				<ApplyForTeacher></ApplyForTeacher>
