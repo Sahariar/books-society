@@ -33,10 +33,11 @@ h1,h2,h3,h4,h5,h6{
 }
 .price-plan{
     transition: all 0.2s ease-in !important;
+    border-bottom: 5px solid #4d75d434;
 }
 .price-plan:hover {
     transform: translateY(-15px);
-    border-bottom: 5px solid rgb(50, 104, 231);
+    border-bottom: 5px solid #3369e7;
 }
 .howDoesWorks {
     transition: all 0.2s ease-in !important;
