@@ -18,7 +18,7 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;Access 7 days</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-outline btn-primary rounded w-1/2'>Learn More</button>
+                        <button className='btn btn-primary rounded w-1/2'>Learn More</button>
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -35,7 +35,7 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;One To one Chat options</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-outline btn-primary rounded w-1/2'>Learn More</button>
+                        <button className='btn btn-primary rounded w-1/2'>Learn More</button>
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -52,7 +52,7 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;One To one Chat options</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-outline btn-primary rounded w-1/2'>Learn More</button>
+                        <button className='btn btn-primary rounded w-1/2'>Learn More</button>
                     </div>
                 </div>
             </div>

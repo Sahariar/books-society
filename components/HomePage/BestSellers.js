@@ -38,12 +38,12 @@ const BestSellers = () => {
 								</figure>
 								<div className="card-body items-center text-center">
 									<h2 className="card-title">
-                                    Give and Take: Why Helping Others Drives Our Success
+										Give and Take: Why Helping Others Drives Our Success
 									</h2>
 								</div>
 							</div>
 						</div>
-                        <div className="flex flex-row gap-2 mt-10">
+						<div className="flex flex-row gap-2 mt-10">
 							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
@@ -54,9 +54,7 @@ const BestSellers = () => {
 									/>
 								</figure>
 								<div className="card-body items-center text-center">
-									<h2 className="card-title">
-                                    The Complete Yoga Poses
-									</h2>
+									<h2 className="card-title">The Complete Yoga Poses</h2>
 								</div>
 							</div>
 							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
@@ -70,7 +68,7 @@ const BestSellers = () => {
 								</figure>
 								<div className="card-body items-center text-center">
 									<h2 className="card-title">
-                                    Drawing Cartoons & Comics for Dummies
+										Drawing Cartoons & Comics for Dummies
 									</h2>
 								</div>
 							</div>
@@ -78,28 +76,32 @@ const BestSellers = () => {
 					</div>
 
 					<div className="middle-section  hover:shadow-xl rounded-xl">
-                    <div className="card border-2 min-h-full">
-								<figure className="pt-2">
-									<Image
-										src="https://i.ibb.co/qYrrxs3/Product-1.jpg"
-										alt="img"
-										width="300"
-										height="500"
-									/>
-								</figure>
-								<div className="card-body items-center text-center">
-									<h2 className="card-title">
-                                    How to Kill Your Family
-									</h2>
-                                    <h5>Book by Bella Mackie</h5>
-                                    <p>
-                                    How How To Kill Your Family follows Grace who is on a mission to get rid of the family who wronged her and take their fortune. However, she is currently serving time for a murder that she did not commit. In all honesty, I picked this book up because of the title, I thought it was wonderfully brilliant. I will never forget the look on my mum’s face when I asked her to grab ...
-                                    </p>
-								</div>
+						<div className="card border-2 min-h-full">
+							<figure className="pt-2">
+								<Image
+									src="https://i.ibb.co/qYrrxs3/Product-1.jpg"
+									alt="img"
+									width="300"
+									height="500"
+								/>
+							</figure>
+							<div className="card-body items-center text-center">
+								<h2 className="card-title">How to Kill Your Family</h2>
+								<h5>Book by Bella Mackie</h5>
+								<p>
+									How How To Kill Your Family follows Grace who is on a mission
+									to get rid of the family who wronged her and take their
+									fortune. However, she is currently serving time for a murder
+									that she did not commit. In all honesty, I picked this book up
+									because of the title, I thought it was wonderfully brilliant.
+									I will never forget the look on my mum’s face when I asked her
+									to grab ...
+								</p>
 							</div>
+						</div>
 					</div>
 					<div className="last-section">
-                    <div className="flex flex-row gap-2 mb-10">
+						<div className="flex flex-row gap-2 mb-10">
 							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
@@ -111,7 +113,7 @@ const BestSellers = () => {
 								</figure>
 								<div className="card-body items-center text-center">
 									<h2 className="card-title">
-                                    Hillbilly Elegy: A Memoir of a Family and Culture in Crisis
+										Hillbilly Elegy: A Memoir of a Family and Culture in Crisis
 									</h2>
 								</div>
 							</div>
@@ -125,13 +127,11 @@ const BestSellers = () => {
 									/>
 								</figure>
 								<div className="card-body items-center text-center">
-									<h2 className="card-title">
-                                    Handbook of Medicinal Herbs
-									</h2>
+									<h2 className="card-title">Handbook of Medicinal Herbs</h2>
 								</div>
 							</div>
 						</div>
-                        <div className="flex flex-row gap-2 mt-10">
+						<div className="flex flex-row gap-2 mt-10">
 							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
 								<figure className="px-2 pt-2">
 									<Image
@@ -143,7 +143,7 @@ const BestSellers = () => {
 								</figure>
 								<div className="card-body items-center text-center">
 									<h2 className="card-title">
-                                    What To Say When You Talk To Yourself
+										What To Say When You Talk To Yourself
 									</h2>
 								</div>
 							</div>
@@ -158,7 +158,7 @@ const BestSellers = () => {
 								</figure>
 								<div className="card-body items-center text-center">
 									<h2 className="card-title">
-                                    You Are a Badass: How to Stop Doubting
+										You Are a Badass: How to Stop Doubting
 									</h2>
 								</div>
 							</div>

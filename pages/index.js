@@ -15,6 +15,7 @@ import Newsletter from "../components/HomePage/Newsletter";
 import SiteStats from "../components/HomePage/SiteStats";
 
 export default function Home() {
+
   return (
     <>
    <Head>
