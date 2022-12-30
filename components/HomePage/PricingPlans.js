@@ -1,5 +1,5 @@
 import {FaCheck} from 'react-icons/fa';
-import Divider from '../Shared/divider';
+import Divider from '../Shared/Divider';
 const PricingPlans = () => {
     return (
         <section className="py-10">

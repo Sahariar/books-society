@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Divider from '../Shared/divider';
+import Divider from '../Shared/Divider';
 
 const Hero = ({ slider }) => {
     return (

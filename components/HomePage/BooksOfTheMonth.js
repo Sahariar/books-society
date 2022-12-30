@@ -1,8 +1,9 @@
 import useSWR from 'swr'
 import axios from 'axios'
-import Divider from '../Shared/divider';
+
 import HomeCard from './HomeCard';
 import Loading from '../Shared/Loading';
+import Divider from '../Shared/Divider';
 
 const fetcher = url => axios.get(url).then(res => res.data)
 const BooksOfTheMonth = () => {
