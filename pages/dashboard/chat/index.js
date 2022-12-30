@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "../../components/Dashboard/Header";
-import Sidebar from "../../components/Dashboard/Sidebar";
-import FeatureSide from "../../components/Dashboard/FeatureSide";
+import Header from "../../../components/Dashboard/Header";
+import Sidebar from "../../../components/Dashboard/Sidebar";
+import FeatureSide from "../../../components/Dashboard/FeatureSide";
 
 
 const index = () => {
