@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Spacer from "../Shared/Spacer";
 
 const BestSellers = () => {
 	return (
@@ -7,13 +8,16 @@ const BestSellers = () => {
 				<h2 className="text-4xl font-bold text-center pt-5">
 					Best Selling Books
 				</h2>
+				<div className=" flex justify-center my-10">
+				<Spacer></Spacer>	
+				</div>
 			</div>
 			<div className="container mx-auto bg-base-00">
-				<div className="grid grid-cols-3 gap-4 mx-auto">
+				<div className="grid grid-cols-1 lg:grid-cols-3  gap-4 mx-auto">
 					<div className="first-section gap-2">
-						<div className="flex flex-row gap-2 mb-10">
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+						<div className="flex flex-row gap-2 mb-10 justify-center">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/k9nS3Cq/Living-in-the-Light.jpg"
 										alt="img"
@@ -27,8 +31,8 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/8bfgSSV/Give-and-Take.jpg"
 										alt="img"
@@ -43,9 +47,9 @@ const BestSellers = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-row gap-2 mt-10">
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+						<div className="flex flex-row gap-2 mt-10 justify-center">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/XstCs7d/8c763848a19615e858bee15ad828e858.jpg"
 										alt="img"
@@ -57,8 +61,8 @@ const BestSellers = () => {
 									<h2 className="card-title">The Complete Yoga Poses</h2>
 								</div>
 							</div>
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/tbWSWpS/0a651ad3962e9c34fef58a56e9001f16.jpg"
 										alt="img"
@@ -75,9 +79,9 @@ const BestSellers = () => {
 						</div>
 					</div>
 
-					<div className="middle-section  hover:shadow-xl rounded-xl">
+					<div className="middle-section hidden lg:block  hover:shadow-xl rounded-xl">
 						<div className="card border-2 min-h-full">
-							<figure className="pt-2">
+							<figure className="p-2 bg-secondary/10">
 								<Image
 									src="https://i.ibb.co/qYrrxs3/Product-1.jpg"
 									alt="img"
@@ -93,17 +97,15 @@ const BestSellers = () => {
 									to get rid of the family who wronged her and take their
 									fortune. However, she is currently serving time for a murder
 									that she did not commit. In all honesty, I picked this book up
-									because of the title, I thought it was wonderfully brilliant.
-									I will never forget the look on my mum’s face when I asked her
-									to grab ...
+									because of the title, I thought...
 								</p>
 							</div>
 						</div>
 					</div>
 					<div className="last-section">
-						<div className="flex flex-row gap-2 mb-10">
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+						<div className="flex flex-row gap-2 mb-10 justify-center">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/2czdDHZ/4d35b9671c7a9c43bc332ab2a4d08d4b.jpg"
 										alt="img"
@@ -117,8 +119,8 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/drMvQ08/0a4d18c8aea6e359314e2c608bb0fa7b.jpg"
 										alt="img"
@@ -131,9 +133,9 @@ const BestSellers = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-row gap-2 mt-10">
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+						<div className="flex flex-row gap-2 mt-10 justify-center">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/BKmMQ5t/whattosay.jpg"
 										alt="img"
@@ -147,8 +149,8 @@ const BestSellers = () => {
 									</h2>
 								</div>
 							</div>
-							<div className="card w-60 border-2 hover:shadow-xl rounded-xl">
-								<figure className="px-2 pt-2">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
+								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/ZKJqrw9/You-Are-a-Badass.jpg"
 										alt="img"

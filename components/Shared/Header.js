@@ -9,8 +9,8 @@ const Header = () => {
 			<li
 				className={
 					router.pathname == "/"
-						? "border-primary text-primary font-bold border-b-2"
-						: "border-b-2 transition-all"
+						? "border-primary text-primary border-b-2 "
+						: "border-b-2 transition-all ease-in-out delay-150  border-neutral hover:border-primary hover:text-primary hover:"
 				}
 			>
 				<Link href="/">Home</Link>
@@ -18,8 +18,8 @@ const Header = () => {
             <li
 				className={
 					router.pathname == "/about"
-						? "border-primary border-b-2"
-						: "border-b-2 transition-all ease-in-out delay-150"
+						? "border-primary text-primary border-b-2 "
+						: "border-b-2 transition-all ease-in-out delay-150  border-neutral hover:border-primary hover:text-primary hover:"
 				}
 			>
 				<Link href="/about">About</Link>
@@ -27,17 +27,17 @@ const Header = () => {
 			<li
 				className={
 					router.pathname == "/books"
-						? "border-primary border-b-2"
-						: "border-b-2"
+						? "border-primary text-primary border-b-2"
+						: "border-b-2 transition-all ease-in-out delay-150  border-neutral hover:border-primary hover:text-primary hover:"
 				}
 			>
-				<Link href="/books">Books</Link>
+				<Link href="/books/">Books</Link>
 			</li>
 			<li
 				className={
 					router.pathname == "/author"
-						? "border-primary border-b-2"
-						: "border-b-2"
+						? "border-primary text-primary border-b-2"
+						: "border-b-2 transition-all ease-in-out delay-150  border-neutral hover:border-primary hover:text-primary"
 				}
 			>
 				<Link href="/author">Author</Link>
@@ -45,8 +45,8 @@ const Header = () => {
             <li
 				className={
 					router.pathname == "/blog"
-						? "border-primary border-b-2"
-						: "border-b-2"
+						? "border-primary text-primary border-b-2"
+						: "border-b-2 transition-all ease-in-out delay-150  border-neutral hover:border-primary hover:text-primary"
 				}
 			>
 				<Link href="/blog">Blog</Link>
@@ -54,8 +54,8 @@ const Header = () => {
 			<li
 				className={
 					router.pathname == "/contact"
-						? "border-primary border-b-2"
-						: "border-b-2"
+						? "border-primary text-primary border-b-2"
+						: "border-b-2 transition-all ease-in-out delay-150 border-neutral hover:border-primary hover:text-primary"
 				}
 			>
 				<Link href="/contact">Contact</Link>
@@ -63,12 +63,12 @@ const Header = () => {
 		</>
 	);
 	return (
-		<header className="header-area  bg-base-100">
-			<div className="top-navbar-area bg-neutral">
+		<header className="header-area bg-neutral text-white">
+			{/* <div className="top-navbar-area ">
 				<div className="container mx-auto">
 					<div className="flex justify-between items-center">
 						<div className="start">
-							<ul className="menu menu-horizontal p-0 text-white">
+							<ul className="menu menu-horizontal p-0 ">
 								<li>
 									<Link href="/membership">Membership</Link>
 								</li>
@@ -130,10 +130,10 @@ const Header = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<div className="container mx-auto">
 				<div className="navbar">
-					<div className="navbar-start">
+					<div className="navbar-start w-full lg:w-4/12">
 						<div className="dropdown">
 							<label tabIndex={0} className="btn btn-ghost lg:hidden">
 								<svg
@@ -153,21 +153,19 @@ const Header = () => {
 							</label>
 							<ul
 								tabIndex={0}
-								className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+								className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52"
 							>
 								{navItem}
 							</ul>
 						</div>
 
-						<Logo width={10} height={10} color={"text-black"}></Logo>
+						<Logo width={10} height={10} color={"text-white"}></Logo>
 					</div>
-					<div className="navbar-center hidden lg:flex">
-						<ul className="menu menu-horizontal p-0">{navItem}</ul>
-					</div>
-					<div className="navbar-end">
+					<div className="navbar-end  hidden lg:flex lg:w-8/12">
+					<ul className="menu menu-horizontal p-0">{navItem}</ul>
 						{/* {user?.email ? (
 						<div className="flex items-center">
-						<div className="user-info-area text-xl font-bold">
+						<div className="user-info-area text-xl ">
 							<h4>
 							Welcome, {user?.displayName}
 							</h4>

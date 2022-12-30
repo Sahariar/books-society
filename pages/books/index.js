@@ -1,7 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
+import BooksCard from "../../components/Books/BooksCard";
+import Newsletter from "../../components/HomePage/Newsletter";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
-import clientPromise from "../../lib/mongodb";
+import Spacer from "../../components/Shared/Spacer";
+import { getBooks } from "../api/books";
 
 const index = ({ booksData }) => {
 	return (
@@ -14,34 +18,34 @@ const index = ({ booksData }) => {
 			<Header></Header>
 
 			<main>
-				<section className="container mx-auto py-10">
-					<div className="title-area py-20 bg-gradient-to-r from-primary to-primary/10">
-						<h2 className="text-4xl text-white font-bold text-center">
-							{" "}
-							Books
-						</h2>
+				<section className="pb-10">
+				<div className="title-area py-5 bg-neutral">
+					<div className="container mx-auto">
+						<div className="w-6/12 mx-auto text-white">
+						<h2 className="text-4xl  font-bold text-center">All the Available Books</h2>
+						<div className=" flex justify-center my-10">
+				<Spacer></Spacer>	
+				</div>
+						<p className="mx-auto text-center pb-10">
+							Improving vocabulary and language skills: Reading exposes you to
+							new words and concepts, which can help to expand your vocabulary
+							and improve your language skills. Promoting concentration and
+						
+						</p>
+						</div>
+						
 					</div>
-
-					<div className="grid grid-cols-4 gap-4 mx-auto">
-						{booksData.map((books) => (
-							<div className="card bg-base-100 shadow-xl my-10" key={books._id}>
-								<figure>
-									<img src={books.picture} alt={books.title} />
-								</figure>
-								<div className="card-body">
-									<h2 className="card-title">{books.title}</h2>
-									<p>{books.author}</p>
-									<p>{books?.description.slice(0, 100)}</p>
-									<div className="card-actions justify-end">
-										<button className="btn btn-primary">Read More</button>
-									</div>
-								</div>
-							</div>
-						))}
+					</div>
+					<div className="container mx-auto">
+					<div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-auto">
+							{booksData.map((books) => (
+								<BooksCard key={books._id} bookData={books}></BooksCard>
+							))}
+						</div>
 					</div>
 				</section>
 			</main>
-
+			<Newsletter></Newsletter>
 			<Footer></Footer>
 		</>
 	);
@@ -49,15 +53,21 @@ const index = ({ booksData }) => {
 
 export async function getStaticProps() {
 	try {
-		const client = await clientPromise;
-		const booksCollection = client.db("booksdb").collection("bsCollect");
-		let query = {};
-		const booksData = await booksCollection.find(query).toArray();
+		const booksData = await getBooks();
+		if (!booksData) {
+			return {
+				notFound: true,
+				revalidate: 60,
+			};
+		}
 		return {
-			props: { booksData: JSON.parse(JSON.stringify(booksData)) },
+			props: {
+				booksData: JSON.parse(JSON.stringify(booksData)),
+			},
+			revalidate: 60,
 		};
-	} catch (e) {
-		console.error(e);
+	} catch (error) {
+		console.log(error);
 	}
 }
 

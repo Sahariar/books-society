@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,800;0,900;1,700&family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body{
+    font-family: 'Inter', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Cardo', serif;
+}
 /* hero section */
 .heroSwiper .swiper-button-prev:after {
     content: 'none';
@@ -10,6 +15,16 @@
 
 .heroSwiper .swiper-button-next:after {
     content: 'none';
+}
+.mySwiper .swiper-button-prev:after {
+    content: 'none';
+}
+
+.mySwiper .swiper-button-next:after {
+    content: 'none';
+}
+.slide-arrow{
+    top:82%
 }
 .img-gradient:after {
     content: '';
@@ -22,22 +37,17 @@
     border-radius: 16px;
     background: linear-gradient(90deg, #151515cc 0%, rgba(21, 21, 21, 0) 100%);
 }
-body{
-    font-family: 'Alegreya', serif;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Marcellus SC', serif;
-}
+
 .logo-title{
     font-family: 'Marcellus SC', serif;
 }
 .price-plan{
     transition: all 0.2s ease-in !important;
-    border-bottom: 5px solid #4d75d434;
+    border-bottom: 5px solid #1B3764;
 }
 .price-plan:hover {
     transform: translateY(-15px);
-    border-bottom: 5px solid #3369e7;
+    border-bottom: 5px solid #FFCA42;
 }
 .howDoesWorks {
     transition: all 0.2s ease-in !important;
@@ -46,3 +56,37 @@ h1,h2,h3,h4,h5,h6{
     transform: scale(115%);
 }
 
+.bs-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bs-shape svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 95px;
+    transform: rotateY(180deg);
+    animation: shape 10s ease-in-out infinite;
+}
+@keyframes shape {
+    0% {left: 0;}
+    50% {left: -50%;}
+    100% {left: 0;}
+    }
+.bs-shape .shape-fill {
+    fill: #F5F5F4;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bs-shape svg {
+        width: calc(148% + 1.3px);
+        height: 84px;
+    }
+}
