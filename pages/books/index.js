@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import BooksCard from "../../components/Books/BooksCard";
 import Newsletter from "../../components/HomePage/Newsletter";
-import Divider from "../../components/Shared/divider";
+import Divider from "../../components/Shared/Divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
 import { getBooks } from "../api/books";

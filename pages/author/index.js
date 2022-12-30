@@ -1,6 +1,6 @@
 import Head from "next/head";
 import AuthorCard from "../../components/Author/AuthorCard";
-import Divider from "../../components/Shared/divider";
+import Divider from "../../components/Shared/Divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
 import { getAuthor } from "../api/author";

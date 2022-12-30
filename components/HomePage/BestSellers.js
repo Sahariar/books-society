@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divider from "../Shared/divider";
+import Divider from '../Shared/Divider';
 
 const BestSellers = () => {
 	return (

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Divider from "../../components/Shared/divider";
+import Divider from "../../components/Shared/Divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
 import { BiBook } from "react-icons/bi";

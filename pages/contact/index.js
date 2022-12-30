@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Newsletter from "../../components/HomePage/Newsletter";
-import Divider from "../../components/Shared/divider";
+import Divider from "../../components/Shared/Divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
 
