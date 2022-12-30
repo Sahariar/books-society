@@ -3,7 +3,8 @@ import { BsBookFill, BsPencilSquare } from "react-icons/bs";
 import { BiCategory } from "react-icons/bi";
 import { RiPriceTag3Fill, RiQuillPenFill } from "react-icons/ri";
 import { FaBoxOpen } from "react-icons/fa";
-import Divider from "../Shared/divider";
+import Spacer from "../Shared/Spacer";
+
 
 const Service = () => {
 	return (
@@ -13,7 +14,7 @@ const Service = () => {
 					Our Service
 				</h2>
 				<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>
 				</div>
 			</div>
 	<div className="container flex flex-col-reverse mx-auto lg:flex-row ">

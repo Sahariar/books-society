@@ -1,5 +1,6 @@
+import React from 'react';
 
-const Divider = () => {
+const Spacer = () => {
     return (
         <>
         <svg
@@ -15,4 +16,4 @@ viewBox="0 0 56 3"
     );
 };
 
-export default Divider;
+export default Spacer;

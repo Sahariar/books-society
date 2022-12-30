@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Divider from "../../components/Shared/divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
 import { getBookDetails } from "../api/books/[bookId]";
 import { BiBook } from "react-icons/bi";
 import Loading from "../../components/Shared/Loading";
+import Spacer from "../../components/Shared/Spacer";
 const booksDetails = ({ bookInfo }) => {
 	const router = useRouter();
 
@@ -33,7 +33,7 @@ const booksDetails = ({ bookInfo }) => {
 									Books Details
 								</h2>
 								<div className=" flex justify-center my-10">
-									<Divider></Divider>
+									<Spacer />
 								</div>
 								<p className="mx-auto text-center pb-10">
 									Improving vocabulary and language skills: Reading exposes you
@@ -61,7 +61,7 @@ const booksDetails = ({ bookInfo }) => {
 										<h2 className="text-4xl font-bold pb-3">
 											{bookInfo.title}
 										</h2>
-										<Divider></Divider>
+										<Spacer></Spacer>
 									</div>
 									<div className="free-section pb-12">
 										<p className="text-3xl text-primary font-bold">
@@ -114,17 +114,15 @@ const booksDetails = ({ bookInfo }) => {
 									<div className="py-6 border-neutral bg-secondary/10 border-2 text-neutral text-center rounded-xl w-1/3 mx-auto">
 										Additional Information
 									</div>
-                                    <div className="w-full py-10">
-									<h2 className="text-3xl pb-10">
-                                    Is this book for me?
-									</h2>
-									<p>
-										There are many variations of passages of Lorem Ipsum
-										available, but the majority have suffered alteration in some
-										form, bypassed injected humour, or randomized words which
-										don't look even slightly believable.
-									</p>
-								</div>
+									<div className="w-full py-10">
+										<h2 className="text-3xl pb-10">Is this book for me?</h2>
+										<p>
+											There are many variations of passages of Lorem Ipsum
+											available, but the majority have suffered alteration in
+											some form, bypassed injected humour, or randomized words
+											which don't look even slightly believable.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>

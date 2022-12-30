@@ -1,5 +1,5 @@
 import {FaCheck} from 'react-icons/fa';
-import Divider from '../Shared/divider';
+import Spacer from '../Shared/Spacer';
 const PricingPlans = () => {
     return (
         <section className="py-10">
@@ -8,7 +8,7 @@ const PricingPlans = () => {
                 Pricing Plans
 				</h2>
 				<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>
 				</div>
 			</div>
             <h1 className='text-center pb-5 text-4xl font-bold'>

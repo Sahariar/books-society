@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Newsletter from "../../components/HomePage/Newsletter";
 import Service from "../../components/HomePage/Service";
-import Divider from "../../components/Shared/divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
+import Spacer from "../../components/Shared/Spacer";
 import Team from "../../components/Shared/Team";
 const index = () => {
     return (
@@ -22,7 +22,7 @@ const index = () => {
 						<div className="w-6/12 mx-auto text-white">
 						<h2 className="text-4xl  font-bold text-center">About Books Society</h2>
 						<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>	
 				</div>
 						<p className="mx-auto text-center pb-10">
 							Improving vocabulary and language skills: Reading exposes you to

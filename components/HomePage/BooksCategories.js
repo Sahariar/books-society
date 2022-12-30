@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divider from "../Shared/divider";
+import Spacer from "../Shared/Spacer";
 
 const BooksCategories = () => {
 	return (
@@ -10,7 +10,7 @@ const BooksCategories = () => {
 					Books Categories
 				</h2>
 				<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>	
 				</div>
 			</div>
 		<div className="container mx-auto">

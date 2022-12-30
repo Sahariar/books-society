@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Divider from '../Shared/divider';
+import Spacer from '../Shared/Spacer';
 
 const Hero = ({ slider }) => {
     return (
@@ -10,7 +10,7 @@ const Hero = ({ slider }) => {
 
                         <h4 className='flex items-center text-xl sm:text-2xl text-white font-bold text-center xl:text-left italic capitalize'>
                         <span className='pr-4'>
-                        <Divider></Divider>
+                        <Spacer></Spacer>
                         </span>
                         <span className=''>Welcome to Books Society</span></h4>
                         <h1 className='text-5xl capitalize leading-10 lg:text-7xl text-white font-bold text-center xl:text-left'>

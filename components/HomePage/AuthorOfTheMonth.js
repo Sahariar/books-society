@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divider from "../Shared/divider";
+import Spacer from "../Shared/Spacer";
 
 const AuthorOfTheMonth = () => {
     return (
@@ -9,7 +9,7 @@ const AuthorOfTheMonth = () => {
                Author Of The Month
             </h2>
             <div className=" flex justify-center my-10">
-            <Divider></Divider>		
+            <Spacer></Spacer>	
             </div>
         </div>
 
@@ -24,7 +24,7 @@ const AuthorOfTheMonth = () => {
                 <div className="p-20">
 						<div className="pb-12">
 						<h1 className="text-4xl font-bold pb-3">About Bella Mackie</h1>
-						<Divider></Divider>
+					<Spacer></Spacer>
 						</div>
 						
 						<p className="">
