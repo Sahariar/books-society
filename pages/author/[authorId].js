@@ -19,7 +19,7 @@ const authorDetails = ({ authorInfo }) => {
 	return (
 		<>
 			<Head>
-				<title>{authorInfo.title}</title>
+				<title>{authorInfo.author_name} </title>
 				<meta name="description" content={authorInfo.description} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
