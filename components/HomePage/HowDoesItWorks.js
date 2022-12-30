@@ -5,7 +5,7 @@ import {
 	FaEnvelopeOpenText,
 	FaAngleRight,
 } from "react-icons/fa";
-import Divider from "../Shared/divider";
+import Spacer from "../Shared/Spacer";
 const HowDoesItWorks = () => {
 	return (
 		<>
@@ -15,7 +15,7 @@ const HowDoesItWorks = () => {
 				How Does It Works
 				</h2>
 				<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+			<Spacer></Spacer>
 				</div>
 			</div>
 	<div className="container max-w-5xl px-4 py-12 mx-auto">

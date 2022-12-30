@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Divider from "../../components/Shared/Divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
 import { BiBook } from "react-icons/bi";
 import Loading from "../../components/Shared/Loading";
 import { getAuthorDetails } from "../api/author/[authorId]";
+import Spacer from "../../components/Shared/Spacer";
 
 const authorDetails = ({ authorInfo }) => {
 	const router = useRouter();
@@ -34,7 +34,7 @@ const authorDetails = ({ authorInfo }) => {
 									Author Details
 								</h2>
 								<div className=" flex justify-center my-10">
-									<Divider></Divider>
+								<Spacer></Spacer>
 								</div>
 								<p className="mx-auto text-center pb-10">
 									Improving vocabulary and language skills: Reading exposes you
@@ -52,7 +52,7 @@ const authorDetails = ({ authorInfo }) => {
 									</h2>
 								</div>
 								<div className=" flex justify-center my-10">
-									<Divider></Divider>
+									<Spacer></Spacer>
 								</div>
 								<div className="xl:p-24 w-8/12 mx-auto bg-secondary/10 rounded-md">
 									<Image
@@ -66,7 +66,7 @@ const authorDetails = ({ authorInfo }) => {
 									<div className="author-Book-List">
 										<h4 className="text-2xl text-center">Books List</h4>
 										<div className=" flex justify-center my-10">
-											<Divider></Divider>
+										<Spacer></Spacer>
 										</div>
 										{authorInfo.books.map((book) => (
 											<div

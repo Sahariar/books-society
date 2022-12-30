@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Divider from '../Shared/Divider';
+import Spacer from "../Shared/Spacer";
 
 const BestSellers = () => {
 	return (
@@ -9,7 +9,7 @@ const BestSellers = () => {
 					Best Selling Books
 				</h2>
 				<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>	
 				</div>
 			</div>
 			<div className="container mx-auto bg-base-00">

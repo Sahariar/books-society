@@ -3,7 +3,8 @@ import axios from 'axios'
 
 import HomeCard from './HomeCard';
 import Loading from '../Shared/Loading';
-import Divider from '../Shared/Divider';
+import Spacer from '../Shared/Spacer';
+
 
 const fetcher = url => axios.get(url).then(res => res.data)
 const BooksOfTheMonth = () => {
@@ -19,7 +20,7 @@ const BooksOfTheMonth = () => {
 					Books Of The Month
 				</h2>
 				<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>
 				</div>
 			</div>
 

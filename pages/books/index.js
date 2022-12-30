@@ -2,9 +2,9 @@ import Head from "next/head";
 import Link from "next/link";
 import BooksCard from "../../components/Books/BooksCard";
 import Newsletter from "../../components/HomePage/Newsletter";
-import Divider from "../../components/Shared/Divider";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
+import Spacer from "../../components/Shared/Spacer";
 import { getBooks } from "../api/books";
 
 const index = ({ booksData }) => {
@@ -24,7 +24,7 @@ const index = ({ booksData }) => {
 						<div className="w-6/12 mx-auto text-white">
 						<h2 className="text-4xl  font-bold text-center">All the Available Books</h2>
 						<div className=" flex justify-center my-10">
-				<Divider></Divider>		
+				<Spacer></Spacer>	
 				</div>
 						<p className="mx-auto text-center pb-10">
 							Improving vocabulary and language skills: Reading exposes you to

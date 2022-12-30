@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Divider from '../Shared/Divider';
+import Spacer from "../Shared/Spacer";
+
 
 const ApplyForTeacher = () => {
 	return (
@@ -12,7 +13,7 @@ const ApplyForTeacher = () => {
 					<div className="p-20">
 						<div className="pb-12">
 						<h1 className="text-4xl font-bold pb-3">Apply For Teaching</h1>
-						<Divider></Divider>
+						<Spacer></Spacer>
 						</div>
 						
 						<p className="">
