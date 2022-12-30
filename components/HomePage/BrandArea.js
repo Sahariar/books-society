@@ -9,9 +9,9 @@ const BrandArea = () => {
     { logo : "https://i.ibb.co/QDZtWW5/brand-4.png", title : "Urban Lib", description : "A long established fact that a who looking at its layout."},
   ]
   return (
-   <div>
-    <p className='text-center pt-10 pb-6 text-4xl font-bold text-[#1B3764]'>Trusted by the Best</p>
-    <div className=' py-3 px-10 lg:px-6 md:px-8 grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10 justify-around'>
+   <div className='container mx-auto'>
+    <p className='text-center  pt-10 pb-6 text-4xl font-bold text-[#1B3764]'>Trusted by the Best</p>
+    <div className='py-3 px-10 lg:px-6 md:px-8 grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-10 justify-around'>
        {
         brandAreaInfo.map(info => {
           return (
@@ -20,7 +20,7 @@ const BrandArea = () => {
        <Image src={info?.logo} height={50} width={150} ></Image>
       </div>
       <div>
-        <p className='font-semibold text-2xl text-[#1B3764]  font-sans'>{info?.title}</p>
+        <p className='font-semibold text-2xl  text-[#1B3764]  font-sans'>{info?.title}</p>
       <p className=' text-[#727579] text-lg'>{info?.description}</p>
       </div>
       </div>

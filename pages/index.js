@@ -39,11 +39,11 @@ export default function Home() {
         <Service></Service>
         <BestSellers></BestSellers>
          <HowDoesItWorks></HowDoesItWorks>
-        <BooksCategories></BooksCategories>
+        <BrandArea></BrandArea>
+         <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
         <Testimonial></Testimonial>
-        <BrandArea></BrandArea>
         <Newsletter></Newsletter>
 				<Footer></Footer>
 			</main>
