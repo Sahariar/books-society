@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Footer from "../../components/Shared/Footer";
-import Header from "../../components/Shared/Header";
+import Header from "../../components/Dashboard/Header";
+import Sidebar from "../../components/Dashboard/Sidebar";
+import FeatureSide from "../../components/Dashboard/FeatureSide";
+
 
 const index = () => {
   return (
@@ -13,16 +15,18 @@ const index = () => {
       <Header></Header>
 
       <main>
-        <section className="container mx-auto py-10">
-          <div className="title-area py-20 bg-gradient-to-r from-primary to-primary/10">
-            <h2 className="text-4xl text-white font-bold text-center">Dashboard</h2>
+        <section className="grid grid-cols-10 gap-5">
+          <div className="col-span-2">
+            <Sidebar/>
           </div>
-
-
+          <div className="col-span-5">
+            Hello
+          </div>
+          <div className="col-span-3">
+            <FeatureSide />
+          </div>
         </section>
       </main>
-
-      <Footer></Footer>
     </>
   );
 };
