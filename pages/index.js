@@ -14,6 +14,7 @@ import Testimonial from "../components/HomePage/Testimonial";
 import Newsletter from "../components/HomePage/Newsletter";
 import SiteStats from "../components/HomePage/SiteStats";
 import AuthorOfTheMonth from "../components/HomePage/AuthorOfTheMonth";
+import BrandArea from "../components/HomePage/BrandArea";
 
 export default function Home() {
 
@@ -42,6 +43,7 @@ export default function Home() {
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
         <Testimonial></Testimonial>
+        <BrandArea></BrandArea>
         <Newsletter></Newsletter>
 				<Footer></Footer>
 			</main>
