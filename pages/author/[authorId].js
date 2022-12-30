@@ -62,6 +62,17 @@ const authorDetails = ({ authorInfo }) => {
 										alt={authorInfo.author_name}
 									></Image>
 								</div>
+								<div className="py-5">
+									<div className="author-Book-List">
+										<h4 className="text-2xl text-center">About Author</h4>
+										<div className=" flex justify-center my-10">
+										<Spacer></Spacer>
+										</div>
+										<p className="text-lg">
+										{authorInfo.author_description}
+											</p>
+									</div>
+								</div>
 								<div className="p-20">
 									<div className="author-Book-List">
 										<h4 className="text-2xl text-center">Books List</h4>
@@ -86,7 +97,7 @@ const authorDetails = ({ authorInfo }) => {
 							<div className="lg:w-6/12 mx-2">
 								<div className="bg-neutral text-white  p-10">
 									<div className="w-full py-10">
-										<h2 className="text-3xl pb-10">Do you Know Him?</h2>
+										<h2 className="text-3xl pb-10">Do you Know?</h2>
 										<p>
 											There are many variations of passages of Lorem Ipsum
 											available, but the majority have suffered alteration in
@@ -100,7 +111,7 @@ const authorDetails = ({ authorInfo }) => {
 							<div className="lg:w-6/12 mx-2">
 								<div className="bg-accent p-10">
 									<div className="w-full py-10">
-										<h2 className="text-3xl pb-10">Want To Learn From Him?</h2>
+										<h2 className="text-3xl pb-10">Want To Learn?</h2>
 										<p>
 											There are many variations of passages of Lorem Ipsum
 											available, but the majority have suffered alteration in

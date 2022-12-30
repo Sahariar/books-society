@@ -131,7 +131,7 @@ const Header = () => {
 					</div>
 				</div>
 			</div> */}
-			<div className="container mx-auto py-5">
+			<div className="container mx-auto">
 				<div className="navbar">
 					<div className="navbar-start w-full lg:w-4/12">
 						<div className="dropdown">
