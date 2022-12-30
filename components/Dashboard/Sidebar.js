@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../components/Shared/Logo";
-import {AiFillWechat, AiOutlineBook, AiOutlineDashboard, AiOutlineLogout, AiOutlineMessage, AiOutlinePlus, AiOutlineRedEnvelope, AiOutlineUnorderedList, AiOutlineUserAdd, AiOutlineUsergroupAdd} from 'react-icons/ai';
+import {AiFillWechat, AiOutlineBook, AiOutlineDashboard, AiOutlineLogout, AiOutlineMessage, AiOutlinePlus, AiOutlineUnorderedList, AiOutlineUserAdd, AiOutlineUsergroupAdd} from 'react-icons/ai';
 
 const Sidebar = () => {
     const router = useRouter();
+    
     return (
-        <div className="min-h-screen p-3 space-y-2 bg-white border-r-2">
+        <div className="min-h-screen w-60 p-3 space-y-2 bg-white border-r-2">
             <div className="mb-10">
                 <Logo width={10} height={10} color={"text-black"} />
             </div>

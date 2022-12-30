@@ -2,9 +2,11 @@ import Head from "next/head";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
 import Chat from "../../../components/Dashboard/Chat/Chat";
+import { useState } from "react";
 
 
 const index = () => {
+  const [close, setClose] = useState(false);
   return (
     <>
       <Head>
@@ -13,15 +15,13 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white">
-        <section className="grid grid-cols-10">
-          <div className="col-span-2">
-            <Sidebar/>
-          </div>
-          <div className="col-span-8">
-            <Header></Header>
+      <main className="bg-white flex items-start justify-center">
+        <div className={close ? 'w-0 overflow-hidden transition-all duration-300 translate-x-[-100%]' : 'transition-all duration-300 translate-x-0 w-60'}>
+          <Sidebar />
+        </div>
+        <section className="w-full">
+            <Header close={close} setClose={setClose}></Header>
             <Chat/>
-          </div>
         </section>
       </main>
     </>
