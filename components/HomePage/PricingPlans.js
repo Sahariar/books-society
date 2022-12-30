@@ -1,9 +1,18 @@
 import {FaCheck} from 'react-icons/fa';
+import Divider from '../Shared/divider';
 const PricingPlans = () => {
     return (
-        <div className="">
-            <h1 className='text-center pb-5 pt-20 text-4xl font-bold'>
-                    Pricing Plans
+        <section className="py-10">
+            <div className=" mt-10 container mx-auto">
+				<h2 className="text-4xl font-bold text-center pt-5">
+                Pricing Plans
+				</h2>
+				<div className=" flex justify-center my-10">
+				<Divider></Divider>		
+				</div>
+			</div>
+            <h1 className='text-center pb-5 text-4xl font-bold'>
+                   
             </h1>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3 py-10 w-11/12 mx-auto">
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -18,7 +27,7 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;Access 7 days</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-primary rounded w-1/2'>Learn More</button>
+                        <button className='btn btn-primary rounded w-1/2'>Subscribe Now</button>
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -35,7 +44,7 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;One To one Chat options</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-primary rounded w-1/2'>Learn More</button>
+                        <button className='btn btn-primary rounded w-1/2'>Subscribe Now</button>
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -52,11 +61,11 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;One To one Chat options</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-primary rounded w-1/2'>Learn More</button>
+                        <button className='btn btn-primary rounded w-1/2'>Subscribe Now</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
