@@ -23,7 +23,7 @@ const Logo = ({ width, height, color }) => {
 							d="M0 0v10c2 3 5.25 2.04 5.25 4h1V4C6.25 1.017 2 3 0 0zm14 0c-2 3-6.25 1.045-6.25 4v10h1c0-1.98 3.25-1 5.25-4z"
 						></path>
 					</svg>
-					<span className={`${color} hidden md:block logo-title`}>
+					<span className={`${color} logo-title`}>
 						Books Society
 					</span>
 				</span>
