@@ -14,6 +14,7 @@ import Testimonial from "../components/HomePage/Testimonial";
 import Newsletter from "../components/HomePage/Newsletter";
 import SiteStats from "../components/HomePage/SiteStats";
 import AuthorOfTheMonth from "../components/HomePage/AuthorOfTheMonth";
+import BrandArea from "../components/HomePage/BrandArea";
 
 export default function Home() {
 
@@ -38,7 +39,8 @@ export default function Home() {
         <Service></Service>
         <BestSellers></BestSellers>
          <HowDoesItWorks></HowDoesItWorks>
-        <BooksCategories></BooksCategories>
+        <BrandArea></BrandArea>
+         <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
         <Testimonial></Testimonial>
