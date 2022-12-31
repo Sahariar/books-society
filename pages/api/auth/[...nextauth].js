@@ -6,6 +6,7 @@ import Users from '../../../model/Schema'
 import connectMongo from "../../../database/conn";
 import {compare} from 'bcrypt';
 export default NextAuth({
+    
 providers:[
     //google provider
     GoogleProvider({
@@ -38,5 +39,6 @@ providers:[
     
     
 
-]
+],
+secret: process.env.NEXTAUTH_SECRET,
 })

@@ -10,7 +10,6 @@ const BooksCategories = () => {
 	if (error) return <div>failed to load</div>
 	if (!data) return <Loading></Loading>
 	const bookData = data.booksCateData
-	console.log(bookData);
 	return (
 		<section className="books-cat-section py-10">
 

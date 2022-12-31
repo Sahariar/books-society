@@ -2,12 +2,19 @@ import ReviewStar from "../Shared/ReviewStar";
 import {BsStar } from "react-icons/bs";
 import { BiBookOpen,BiBook,BiTime } from "react-icons/bi";
 import Link from "next/link";
+import Image from "next/image";
 const HomeCard = ({ book }) => {
 	const { picture, title, author_name, description, average_rating  , _id} = book;
 	return (
 		<div className="card xl:card-side hover:shadow-xl border-2">
 			<figure className="xl:w-4/12 ">
-				<img src={picture} alt="Album" className="h-96 rounded-lg border-2" />
+			<Image 
+                            src={picture}
+                            width="243"
+                            height="380" 
+							className="h-96 rounded-lg border-2"
+                            alt={title}
+                            />
 			</figure>
 			<div className="card-body xl:w-8/12">
 				<h2 className="card-title text-3xl">{title}</h2>
