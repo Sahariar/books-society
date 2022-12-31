@@ -28,9 +28,9 @@ const BooksCard = ({bookData}) => {
 						<div className="text-lg px-2"><ReviewStar reviewScore={average_rating}></ReviewStar></div>
 					</div>
            
-            <div className="card-actions">
+            <div className="card-actions justify-center items-end align-bottom mt-4">
                
-                    <Link href={`/books/${_id}`}> <button className="btn btn-primary btn-block">Read More  </button></Link> 
+                    <Link href={`/books/${_id}`}> <button className="btn btn-primary btn-wide">Read More  </button></Link> 
                    
             </div>
         </div>

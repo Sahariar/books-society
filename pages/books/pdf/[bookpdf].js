@@ -88,7 +88,7 @@ const bookpdf = ({ pdfLink }) => {
 							</div>
 						</div>
 					</div>
-				<div className="w-1/2 mx-auto my-20">
+				<div className="w-4/12 mx-auto my-20">
 					<PDFViewer pdfLink={npdfLink} />
 				</div>
 			</main>

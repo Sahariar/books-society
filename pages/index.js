@@ -36,18 +36,18 @@ export default function Home() {
 			<main className="bg-base-100">
 				<Header></Header>
         <MainHero></MainHero>
-        
         <BooksOfTheMonth></BooksOfTheMonth>
         <SiteStats></SiteStats>
         <AuthorOfTheMonth></AuthorOfTheMonth>
         <Service></Service>
         <BestSellers></BestSellers>
-         <HowDoesItWorks></HowDoesItWorks>
-        <BrandArea></BrandArea>
-         <BooksCategories></BooksCategories>
+        <HowDoesItWorks></HowDoesItWorks>
+        <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
+       
         <Testimonial></Testimonial>
+        <BrandArea></BrandArea>
         <Newsletter></Newsletter>
 				<Footer></Footer>
 			</main>
