@@ -14,9 +14,14 @@ import Testimonial from "../components/HomePage/Testimonial";
 import Newsletter from "../components/HomePage/Newsletter";
 import SiteStats from "../components/HomePage/SiteStats";
 import AuthorOfTheMonth from "../components/HomePage/AuthorOfTheMonth";
-
+import { useState } from 'react';
+import {getSession, signOut, useSession} from "next-auth/react";
+import Link from "next/link";
 export default function Home() {
-
+  const{data:session}=useSession()
+  function handleSignout(){
+    signOut()
+  }
   return (
     <>
    <Head>
@@ -44,7 +49,43 @@ export default function Home() {
         <Testimonial></Testimonial>
         <Newsletter></Newsletter>
 				<Footer></Footer>
+        {session ?User({session,handleSignout}) : Guest()}
 			</main>
     </>
   );
+}
+
+//guest
+function Guest(){
+  return(
+    <main>
+      <h1 className="text-3xl font-bold underline">
+      user are not login
+    </h1>
+    <Link href={'/profile'}> profile page</Link>
+      </main>
+  )
+}
+
+
+
+//Authorize user
+function User({session,handleSignout}){
+  return(
+    <main >
+      <h1 className="text-3xl font-bold underline">
+     Authorize User HomePage
+    </h1>
+    <div>
+      <h5>{session.user.name}</h5>
+      <h5>{session.user.email}</h5>
+    </div>
+    <div>
+      <button onClick={handleSignout}>Sign Out</button>
+    </div>
+    <div>
+      <Link href={'/profile'}> profile page</Link>
+    </div>
+      </main>
+  )
 }
