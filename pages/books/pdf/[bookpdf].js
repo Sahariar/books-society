@@ -21,34 +21,37 @@ const bookpdf = ({ pdfLink }) => {
 	}
 	let npdfLink;
 	switch (id) {
-		case "63ad77a4ef8c2f29f518b6a8":
+		case "63b0849f61b4f157cdc75b03":
 			npdfLink = "/pdf/give.pdf"
 			break;
-		case '63ad77a4ef8c2f29f518b6ab':
+		case '63b0849f61b4f157cdc75b04':
 			npdfLink = "/pdf/badass.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6b1":
+		case "63b0849f61b4f157cdc75b05":
+			npdfLink = "/pdf/what.pdf"
+			break;
+		case "63b0849f61b4f157cdc75b06":
 			npdfLink = "/pdf/Stop_Worrying.pdf"
 			break;
 		case "63ad77a4ef8c2f29f518b6a7":
 			npdfLink = "/pdf/living.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6af":
+		case "63b0849f61b4f157cdc75b08":
 			npdfLink = "/pdf/Hillbilly.pdf"
 			break;
 		case '63b0849f61b4f157cdc75b09':
 			npdfLink = "/pdf/theArtofWar.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6ae":
+		case "63b0849f61b4f157cdc75b0a":
 			npdfLink = "/pdf/yoga.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6ac":
+		case "63b0849f61b4f157cdc75b0b":
 			npdfLink = "/pdf/Howtokill.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6b0":
+		case "63b0849f61b4f157cdc75b0c":
 			npdfLink = "/pdf/miracle.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6ad":
+		case "63b0849f61b4f157cdc75b0d":
 			npdfLink = "/pdf/drawing.pdf"
 			break;
 		case "63b0849f61b4f157cdc75b07":

@@ -9,17 +9,16 @@ import Loading from "../../components/Shared/Loading";
 import Spacer from "../../components/Shared/Spacer";
 // import PdfViewer from "../../components/Books/Pdf/PdfViewer";
 import Link from "next/link";
-
+import { useSession } from "next-auth/react";
 
 const booksDetails = ({ bookInfo }) => {
 	const router = useRouter();
-
+	const { data: session } = useSession();
 	// If the page is not yet generated, this will be displayed
 	// initially until getStaticProps() finishes running
 	if (router.isFallback) {
 		return <Loading></Loading>;
 	}
-
 
 	console.log(bookInfo.local_pdf);
 	return (
@@ -88,23 +87,25 @@ const booksDetails = ({ bookInfo }) => {
 									<p className="text-lg">{bookInfo.description}</p>
 
 									<div className="mt-10 mx-auto">
-										<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
-											Subscribe Now To Read
-										</button>
-										<Link href={`/books/pdf/${bookInfo._id}`}>
-										<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
-											Link To Read
-										</button>
-										</Link>
-									
+										{session ? (
+											<Link href={`/books/pdf/${bookInfo._id}`}>
+												<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
+													Link To Read
+												</button>
+											</Link>
+										) : (
+											<Link href={`/login`}>
+												<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
+													Subscribe Now To Read
+												</button>
+											</Link>
+										)}
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="container mx-auto">
-				
-					</div>
+					<div className="container mx-auto"></div>
 					<div className="container mx-auto pb-20">
 						<div className="flex flex-col lg:flex-row">
 							<div className="lg:w-6/12">
@@ -165,7 +166,7 @@ export const getStaticProps = async (context) => {
 	console.log(params.booksId);
 	try {
 		const bookData = await getBookDetails(params.booksId);
-		
+
 		if (!bookData) {
 			return {
 				notFound: true,
