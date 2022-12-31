@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 
 const BookCateCard = ({book}) => {
-    console.log('book' , book);
     const {
         category_name,
          cate_img,
@@ -19,7 +18,8 @@ const BookCateCard = ({book}) => {
                             <Image 
                             src={cate_img}
                             width="300"
-                            height="300" alt={category_name}
+                            height="300" 
+                            alt={category_name}
                             />
                             
 
