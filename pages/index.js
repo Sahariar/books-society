@@ -17,6 +17,9 @@ import AuthorOfTheMonth from "../components/HomePage/AuthorOfTheMonth";
 import { useState } from 'react';
 import {getSession, signOut, useSession} from "next-auth/react";
 import Link from "next/link";
+import BrandArea from "../components/HomePage/BrandArea";
+
+
 export default function Home() {
   const{data:session}=useSession()
   function handleSignout(){
@@ -43,7 +46,8 @@ export default function Home() {
         <Service></Service>
         <BestSellers></BestSellers>
          <HowDoesItWorks></HowDoesItWorks>
-        <BooksCategories></BooksCategories>
+        <BrandArea></BrandArea>
+         <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
         <Testimonial></Testimonial>
