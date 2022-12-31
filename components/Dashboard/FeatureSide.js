@@ -3,7 +3,7 @@ import fetaure from '../../public/feaTURE.png';
 
 const FeatureSide = () => {
     return (
-        <div className="min-h-screen p-3 bg-white border-l-2">
+        <div className="min-h-screen p-5 bg-white border-l-2">
             <h2 className="uppercase text-2xl text-center my-5">Featured Books</h2>
             <Image src={fetaure} className='w-full' />
             <h3 className="uppercase text-xl text-center my-5">How to kill your family</h3>
