@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
+import { FaEdit, FaTrash } from 'react-icons/fa';
 
 
 const index = () => {
@@ -20,9 +21,34 @@ const index = () => {
         </div>
         <section className="w-full">
             <Header close={close} setClose={setClose}></Header>
-            <div>
-                {/* Your code will go here and you can remove the h1 bellow. */}
-                <h1 className="text-5xl m-6 p-5 rounded-md bg-slate-400">My Books</h1>
+            <div className="m-6">
+                <h1 className="text-2xl pb-5 rounded-md">My Books</h1>
+                <div className="overflow-x-auto">
+                  <table className="table w-full">
+                    <thead>
+                      <tr>
+                        <th>SL</th>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>ISBN No</th>
+                        <th className="w-10">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
+                          <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
             </div>
         </section>
       </main>
