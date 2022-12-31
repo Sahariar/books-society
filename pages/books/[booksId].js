@@ -7,6 +7,10 @@ import { getBookDetails } from "../api/books/[bookId]";
 import { BiBook } from "react-icons/bi";
 import Loading from "../../components/Shared/Loading";
 import Spacer from "../../components/Shared/Spacer";
+// import PdfViewer from "../../components/Books/Pdf/PdfViewer";
+import Link from "next/link";
+
+
 const booksDetails = ({ bookInfo }) => {
 	const router = useRouter();
 
@@ -15,6 +19,9 @@ const booksDetails = ({ bookInfo }) => {
 	if (router.isFallback) {
 		return <Loading></Loading>;
 	}
+
+
+	console.log(bookInfo.local_pdf);
 	return (
 		<>
 			<Head>
@@ -84,10 +91,19 @@ const booksDetails = ({ bookInfo }) => {
 										<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
 											Subscribe Now To Read
 										</button>
+										<Link href={`/books/pdf/${bookInfo._id}`}>
+										<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
+											Link To Read
+										</button>
+										</Link>
+									
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div className="container mx-auto">
+				
 					</div>
 					<div className="container mx-auto pb-20">
 						<div className="flex flex-col lg:flex-row">
@@ -146,10 +162,10 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
 	const { params } = context;
-	console.log(params);
+	console.log(params.booksId);
 	try {
 		const bookData = await getBookDetails(params.booksId);
-		console.log("!!!", bookData);
+		
 		if (!bookData) {
 			return {
 				notFound: true,
