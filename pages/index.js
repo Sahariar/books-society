@@ -21,10 +21,7 @@ import BrandArea from "../components/HomePage/BrandArea";
 
 
 export default function Home() {
-  const{data:session}=useSession()
-  function handleSignout(){
-    signOut()
-  }
+ 
   return (
     <>
    <Head>
@@ -39,57 +36,20 @@ export default function Home() {
 			<main className="bg-base-100">
 				<Header></Header>
         <MainHero></MainHero>
-        
         <BooksOfTheMonth></BooksOfTheMonth>
         <SiteStats></SiteStats>
         <AuthorOfTheMonth></AuthorOfTheMonth>
         <Service></Service>
         <BestSellers></BestSellers>
-         <HowDoesItWorks></HowDoesItWorks>
-        <BrandArea></BrandArea>
-         <BooksCategories></BooksCategories>
+        <HowDoesItWorks></HowDoesItWorks>
+        <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
         <Testimonial></Testimonial>
+        <BrandArea></BrandArea>
         <Newsletter></Newsletter>
 				<Footer></Footer>
-        {session ?User({session,handleSignout}) : Guest()}
 			</main>
     </>
   );
-}
-
-//guest
-function Guest(){
-  return(
-    <main>
-      <h1 className="text-3xl font-bold underline">
-      user are not login
-    </h1>
-    <Link href={'/profile'}> profile page</Link>
-      </main>
-  )
-}
-
-
-
-//Authorize user
-function User({session,handleSignout}){
-  return(
-    <main >
-      <h1 className="text-3xl font-bold underline">
-     Authorize User HomePage
-    </h1>
-    <div>
-      <h5>{session.user.name}</h5>
-      <h5>{session.user.email}</h5>
-    </div>
-    <div>
-      <button onClick={handleSignout}>Sign Out</button>
-    </div>
-    <div>
-      <Link href={'/profile'}> profile page</Link>
-    </div>
-      </main>
-  )
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import Logo from "./Logo";
+import {getSession, signOut, useSession} from "next-auth/react";
 const Header = () => {
 	const router = useRouter();
 	const navItem = (
@@ -62,6 +63,11 @@ const Header = () => {
 			</li>
 		</>
 	);
+	const{data:session}=useSession()
+	function handleSignout(){
+	  signOut()
+	}
+	console.log(session?.user.email);
 	return (
 		<header className="header-area bg-neutral text-white">
 			{/* <div className="top-navbar-area ">
@@ -163,39 +169,28 @@ const Header = () => {
 					</div>
 					<div className="navbar-end  hidden lg:flex lg:w-8/12">
 					<ul className="menu menu-horizontal p-0">{navItem}</ul>
-						{/* {user?.email ? (
+						{session ? (
 						<div className="flex items-center">
-						<div className="user-info-area text-xl ">
-							<h4>
-							Welcome, {user?.displayName}
-							</h4>
-						</div>
 						<div className="dropdown dropdown-end">
 							<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-								<div className="w-10 rounded-full">
-									<img src={user?.phohrefURL ? user?.phohrefURL : "https://placeimg.com/80/80/people"} />
+								<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+									<img src={"https://placeimg.com/80/80/people"} className="ring-" />
 								</div>
 							</label>
 							<ul
 								tabIndex={0}
-								className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+								className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-neutral"
 							>
 								<li>
-									<a className="justify-between">
-										Profile
-										<span className="badge">New</span>
-									</a>
+								<Link href={'/dashboard'}>Dashboard</Link>
 								</li>
-								<li>
-									<a>Settings</a>
-								</li>
-								<li onClick={handleLogOut}>
-									<Link>Logout</Link>
+								<li onClick={handleSignout}>
+									<p>Logout</p>
 								</li>
 							</ul>
 							</div>
 						</div>
-					) : ( */}
+					) : (
 						<div className="flex">
 							<div className="auth-area gap-4 flex">
 								<Link href={"/login"}>
@@ -203,9 +198,7 @@ const Header = () => {
 								</Link>
 							</div>
 						</div>
-						{/* ) */}
-
-						{/* } */}
+					)}
 					</div>
 				</div>
 			</div>

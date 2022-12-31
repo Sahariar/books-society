@@ -20,5 +20,4 @@ export default async function handler(req, res) {
         res.json({status:404, notFound:'Data Not Found'})
     }
     res?.json({ status: 200, bookData: bookData });
-
 }

@@ -3,10 +3,12 @@ import { useState } from "react";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import { getBooks } from "../../api/books";
 
 
-const index = () => {
+const index = ({booksData}) => {
   const [close, setClose] = useState(false);
+  console.log(booksData);
   return (
     <>
       <Head>
@@ -51,7 +53,7 @@ const index = () => {
                         </td>
                         <td>
                           <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
-                          <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
+                          <button title="Delete" className="btn btn-sm btn-error"><FaTrash/></button>
                         </td>
                       </tr>
                       <tr>
@@ -97,5 +99,26 @@ const index = () => {
     </>
   );
 };
+
+
+export async function getStaticProps() {
+	try {
+		const booksData = await getBooks();
+		if (!booksData) {
+			return {
+				notFound: true,
+				revalidate: 60,
+			};
+		}
+		return {
+			props: {
+				booksData: JSON.parse(JSON.stringify(booksData)),
+			},
+			revalidate: 60,
+		};
+	} catch (error) {
+		console.log(error);
+	}
+}
 
 export default index;

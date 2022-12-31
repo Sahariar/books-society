@@ -11,6 +11,8 @@ const connectMongo=async ()=>{
     }
     catch(error){
         return Promise.reject(error)
+
+        console.log(error)
     }
   
 }

@@ -53,8 +53,7 @@ const AddBook = () => {
     return (
 
         
-        <section className="w-full mx-auto max-w-[80%] p-8 space-y-3 rounded-xl border-2 shadow-2xl border-white">
-	<p className="text-2xl font-bold text-center">Add a Book</p>
+        <section className="w-full max-w-[80%] p-8 ml-10 space-y-3 bg-base-100/60 rounded-xl border-2 border-white">
     
 	<form onSubmit={handleForm}  className="container flex flex-col mx-auto space-y-12   ">
 	 <div  className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">

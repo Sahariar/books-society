@@ -5,7 +5,7 @@ const FeatureSide = () => {
     return (
         <div className="min-h-screen p-5 bg-white border-l-2">
             <h2 className="uppercase text-2xl text-center my-5">Featured Books</h2>
-            <Image src={fetaure} className='w-full' />
+            <Image src={fetaure} className='w-full' alt="info"/>
             <h3 className="uppercase text-xl text-center my-5">How to kill your family</h3>
             <div className="flex items-center space-x-2 overflow-x-auto overflow-y-hidden flex-nowrap bg-slate-200 rounded-lg">
                 <a rel="noopener noreferrer" href="#" className="flex items-center flex-shrink-0 p-2 text-sm font-semibold">Class Details</a>

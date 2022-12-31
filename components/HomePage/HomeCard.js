@@ -48,7 +48,7 @@ const HomeCard = ({ book }) => {
 							</span>{" "}
 							Rating:
 						</h5>
-						<p className="text-lg"><ReviewStar reviewScore={average_rating}></ReviewStar></p>
+						<div className="text-lg"><ReviewStar reviewScore={average_rating}></ReviewStar></div>
 					</div>
 				</div>
       
