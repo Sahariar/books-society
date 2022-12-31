@@ -45,7 +45,6 @@ export default function Home() {
         <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
-       
         <Testimonial></Testimonial>
         <BrandArea></BrandArea>
         <Newsletter></Newsletter>
