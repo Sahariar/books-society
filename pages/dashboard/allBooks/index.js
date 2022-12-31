@@ -30,8 +30,7 @@ const index = () => {
                         <th>SL</th>
                         <th>Book Name</th>
                         <th>Author</th>
-                        <th>Readers</th>
-                        <th>Subscriptions</th>
+                        <th>Books of the Month</th>
                         <th>Is Best Seller</th>
                         <th className="w-10">Actions</th>
                       </tr>
@@ -41,8 +40,12 @@ const index = () => {
                         <td>1</td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                          <select className="select w-full bg-white" defaultValue={0}>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                          </select>
+                        </td>
                         <td>
                           <select className="select w-full bg-white" defaultValue={0}>
                             <option value="1">Yes</option>
@@ -58,8 +61,12 @@ const index = () => {
                         <td>2</td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                          <select className="select w-full bg-white" defaultValue={0}>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                          </select>
+                        </td>
                         <td>
                           <select className="select w-full bg-white" defaultValue={0}>
                             <option value="1">Yes</option>
@@ -75,8 +82,12 @@ const index = () => {
                         <td>3</td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                          <select className="select w-full bg-white" defaultValue={0}>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                          </select>
+                        </td>
                         <td>
                           <select className="select w-full bg-white" defaultValue={0}>
                             <option value="1">Yes</option>
