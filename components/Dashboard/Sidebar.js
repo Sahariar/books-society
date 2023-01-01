@@ -86,7 +86,7 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li className={router.pathname == '/dashboard/payment' ? 'font-bold border-l-4 border-gray-600' : ''} >
-                        <Link href='/dashboard/chat' className="flex items-center p-2 space-x-3 rounded-md">
+                        <Link href='/dashboard/payment' className="flex items-center p-2 space-x-3 rounded-md">
                             <RiSecurePaymentFill className='text-2xl' />
                             <span>Payment</span>
                         </Link>
