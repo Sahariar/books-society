@@ -16,7 +16,7 @@ const BestSellers = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-3  gap-4 mx-auto">
 					<div className="first-section gap-2">
 						<div className="flex flex-row gap-2 mb-10 justify-center">
-							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl" data-aos="fade-down-right" data-aos-duration="1000">
+							<div className="card w-80 lg:w-60  border-2 hover:shadow-xl rounded-xl">
 								<figure className="p-2 bg-secondary/10">
 									<Image
 										src="https://i.ibb.co/k9nS3Cq/Living-in-the-Light.jpg"

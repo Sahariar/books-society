@@ -3,8 +3,9 @@ import Header from "../../components/Dashboard/Header";
 import Sidebar from "../../components/Dashboard/Sidebar";
 import FeatureSide from "../../components/Dashboard/FeatureSide";
 import { useState } from "react";
-
+import { getSession } from "next-auth/react"
 const index = () => {
+
   const [close, setClose] = useState(false);
 
   return (
@@ -33,3 +34,22 @@ const index = () => {
 };
 
 export default index;
+
+
+export async function getServerSideProps({req}){
+
+  const session=await getSession({req})
+  if(!session){
+   return{
+     redirect:{
+       destination: '/login',
+     permanent:false
+   }
+   }
+  }
+  return {
+   props:{
+      userData:{...session}
+    }
+  }
+}

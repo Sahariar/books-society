@@ -2,25 +2,28 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../components/Shared/Logo";
 import {AiFillWechat, AiOutlineBook, AiOutlineDashboard, AiOutlineLogout, AiOutlineMessage, AiOutlinePlus, AiOutlineUnorderedList, AiOutlineUserAdd, AiOutlineUsergroupAdd} from 'react-icons/ai';
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 const Sidebar = () => {
     const router = useRouter();
-    function handleSignout(){
-        signOut()
-      }
+    const{data:session}=useSession()
+	function handleSignout(){
+	  signOut()
+	}
+	console.log(session?.user.email);
+
     return (
         <div className="min-h-screen w-60 p-3 space-y-2 bg-white border-r-2">
             <div className="mb-10">
-                <Link href={'/'}>
+                
                 <Logo width={10} height={10} color={"text-black"} />
-                </Link>
+               
                
             </div>
             <div className="flex items-center p-2 space-x-4">
-                <img src="https://source.unsplash.com/100x100/?portrait" alt="" className="w-12 h-12 rounded-full dark:bg-gray-500" />
+                <img src="https://placeimg.com/80/80/people" alt="" className="w-12 h-12 rounded-full dark:bg-gray-500" />
                 <div>
-                    <h2 className="text-lg font-semibold">Leroy Jenkins</h2>
+                    <h2 className="text-lg font-semibold">{session?.user.email.slice(0 ,-10)}</h2>
                     <span className="flex items-center space-x-1">
                         <a rel="noopener noreferrer" href="#" className="text-xs hover:underline dark:text-gray-400">View profile</a>
                     </span>

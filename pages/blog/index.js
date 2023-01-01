@@ -36,236 +36,25 @@ const index = () => {
 					</div>
 					<div className="container mx-auto py-20">
 						<div className="max-w-screen-xl p-5 mx-auto ">
-							<div className="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Politics
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												04
-											</span>
-											<span className="leading-none uppercase">Aug</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											{" "}
-											Autem sunt tempora mollitia magnam non voluptates
-										</a>
-									</h2>
-								</div>
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Health
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												01
-											</span>
-											<span className="leading-none uppercase">Aug</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											Inventore reiciendis aliquam excepturi
-										</a>
-									</h2>
-								</div>
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Science
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												28
-											</span>
-											<span className="leading-none uppercase">Jul</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											Officiis mollitia dignissimos commodi optio vero animi
-										</a>
-									</h2>
-								</div>
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Sports
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												19
-											</span>
-											<span className="leading-none uppercase">Jul</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											Doloribus sit illo necessitatibus architecto
-											exercitationem enim
-										</a>
-									</h2>
-								</div>
-							</div>
+						<div className="p-5 mx-auto sm:p-10 md:p-16 bg-secondary/10">
+	<div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
+		<img src="https://source.unsplash.com/random/480x360" alt="" className="w-full h-60 sm:h-96 dark:bg-gray-500" />
+		<div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-gray-900">
+			<div className="space-y-2">
+				<a rel="noopener noreferrer" href="#" className="inline-block text-2xl font-semibold sm:text-3xl text-white">The Best Activewear from the Nordstrom Anniversary Sale</a>
+				<p className="text-xs dark:text-gray-400">By
+					<a rel="noopener noreferrer" href="#" className="text-xs hover:underline">Leroy Jenkins</a>
+				</p>
+			</div>
+			<div className="dark:text-gray-100">
+				<p>Insert the actual text content here...</p>
+			</div>
+		</div>
+	</div>
+</div>
 						</div>
 					</div>
-					<div className="container mx-auto py-20">
-						<div className="max-w-screen-xl p-5 mx-auto">
-							<div className="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Politics
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												04
-											</span>
-											<span className="leading-none uppercase">Aug</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											{" "}
-											Autem sunt tempora mollitia magnam non voluptates
-										</a>
-									</h2>
-								</div>
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Health
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												01
-											</span>
-											<span className="leading-none uppercase">Aug</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											Inventore reiciendis aliquam excepturi
-										</a>
-									</h2>
-								</div>
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Science
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												28
-											</span>
-											<span className="leading-none uppercase">Jul</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											Officiis mollitia dignissimos commodi optio vero animi
-										</a>
-									</h2>
-								</div>
-								<div className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500">
-									<div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
-									<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 bgundefined"
-										>
-											Sports
-										</a>
-										<div className="flex flex-col justify-start text-center dark:text-gray-100">
-											<span className="text-3xl font-semibold leading-none tracking-wide">
-												19
-											</span>
-											<span className="leading-none uppercase">Jul</span>
-										</div>
-									</div>
-									<h2 className="z-10 p-5">
-										<a
-											rel="noopener noreferrer"
-											href="#"
-											className="font-medium text-md hover:underline dark:text-gray-100"
-										>
-											Doloribus sit illo necessitatibus architecto
-											exercitationem enim
-										</a>
-									</h2>
-								</div>
-							</div>
-						</div>
-					</div>
+
 				</section>
 				<Service></Service>
 			</main>

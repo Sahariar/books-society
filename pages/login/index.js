@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Footer from "../../components/Shared/Footer";
 import Header from "../../components/Shared/Header";
-
-import { FaFingerprint } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import { signIn, signOut } from "next-auth/react";
@@ -10,6 +8,9 @@ import { useFormik } from "formik";
 import login_validate from "../../lib/validate";
 import { useRouter } from "next/router";
 import Spacer from "../../components/Shared/Spacer";
+import { toast } from "react-toastify";
+
+
 
 const index = () => {
 	const [show, setShow] = useState(false);
@@ -24,14 +25,24 @@ const index = () => {
 	});
 	console.log(formik.errors);
 	async function onSubmit(values) {
-		//  console.log(values)
+		 console.log(values)
+		 toast.info('From Submission Going on');
 		const status = await signIn("credentials", {
 			redirect: false,
 			email: values.email,
 			password: values.password,
-			callbackUrl: "/",
+			callbackUrl: "/dashboard",
 		});
-		if (status.ok) router.push(status.url);
+
+		const data ={
+			username:values.email,
+			secret: values.password
+		}
+		
+		if (status.ok){
+			toast.success('Login Success');
+				router.push(status.url);
+		}
 	}
 
 	//Google Handler Function
@@ -67,7 +78,7 @@ const index = () => {
 						
 					</div>
 					</div>
-          <div className="flex items-center justify-center my-20 ">
+          <div className="flex items-center justify-center my-5 ">
           <div className="bg-base-100/60 flex rounded-2xl shadow-lg lg:w-8/12 p-5 items-center my-10">
 						<div className="md:w-1/2 px-8 md:px-16">
 							<form
@@ -80,6 +91,7 @@ const index = () => {
 									type="email"
 									name="email"
 									placeholder="Email"
+								
 								/>
 								<div className="relative">
 									<input
@@ -88,6 +100,7 @@ const index = () => {
 										type={`${show ? "text" : "password"}`}
 										name="password"
 										placeholder="Password"
+										
 									/>
 									<svg
 										onClick={() => setShow(!show)}
@@ -175,8 +188,8 @@ const index = () => {
 
 						<div className="md:block hidden w-1/2">
 							<img
-								className="rounded-2xl"
-								src="https://images.unsplash.com/photo-1616606103915-dea7be788566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+								className="rounded-2xl h-1/2"
+								src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
 							/>
 						</div>
 					</div>

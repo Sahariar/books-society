@@ -12,7 +12,7 @@ const BooksOfTheMonth = () => {
 	if (error) return <div>failed to load</div>
 	if (!data) return <Loading></Loading>
 	const bookData = data.bOTMData
-	console.log(bookData);
+	// console.log(bookData);
 	return (
 		<section className="home-featured-section my-10">
 			<div className="p-12 mt-10 container mx-auto">
