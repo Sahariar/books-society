@@ -12,9 +12,7 @@ const PricingPlans = () => {
 				<Spacer></Spacer>
 				</div>
 			</div>
-            <h1 className='text-center pb-5 text-4xl font-bold'>
-                   
-            </h1>
+    
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3 py-10 w-11/12 mx-auto">
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
                     <h2 className="text-center text-4xl">Free Trial</h2>
