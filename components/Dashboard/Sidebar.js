@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Logo from "../../components/Shared/Logo";
 import {AiFillWechat, AiOutlineBook, AiOutlineDashboard, AiOutlineLogout, AiOutlineMessage, AiOutlinePlus, AiOutlineUnorderedList, AiOutlineUserAdd, AiOutlineUsergroupAdd} from 'react-icons/ai';
 import { signOut, useSession } from "next-auth/react";
-
+import { RiSecurePaymentFill } from "react-icons/ri";
 const Sidebar = () => {
     const router = useRouter();
     const{data:session}=useSession()
@@ -83,6 +83,12 @@ const Sidebar = () => {
                         <Link href='/dashboard/chat' className="flex items-center p-2 space-x-3 rounded-md">
                             <AiFillWechat className='text-2xl' />
                             <span>Chat</span>
+                        </Link>
+                    </li>
+                    <li className={router.pathname == '/dashboard/payment' ? 'font-bold border-l-4 border-gray-600' : ''} >
+                        <Link href='/dashboard/chat' className="flex items-center p-2 space-x-3 rounded-md">
+                            <RiSecurePaymentFill className='text-2xl' />
+                            <span>Payment</span>
                         </Link>
                     </li>
                     
