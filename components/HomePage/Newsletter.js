@@ -4,7 +4,7 @@ const Newsletter = () => {
     return (
         <section className="w-full py-20">
 	<div className="container rounded-xl flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-48 bg-primary">
-		<div className="w-6/12 mx-auto">
+		<div className="w-full lg:w-6/12 mx-auto">
 		<h1 className="text-5xl antialiased font-semibold leading-none text-center text-black">Get Our Updates</h1>
 		<p className="pt-2 pb-8 text-xl antialiased text-center  text-black">Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.</p>
 		<div className="flex flex-row">
