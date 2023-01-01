@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import AddBook from "../../../components/AddBook/AddBook";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
 
@@ -22,7 +23,11 @@ const index = () => {
             <Header close={close} setClose={setClose}></Header>
             <div>
                 {/* Your code will go here and you can remove the h1 bellow. */}
-                <h1 className="text-5xl m-6 p-5 rounded-md bg-slate-400">Add Book</h1>
+                <h1 className="text-5xl m-6 p-5 rounded-md bg-base-100/60 w-full max-w-[80%]  ml-10 space-y-3">Add Book</h1>
+            </div>
+
+            <div className="form-area">
+              <AddBook></AddBook>
             </div>
         </section>
       </main>

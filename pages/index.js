@@ -14,10 +14,14 @@ import Testimonial from "../components/HomePage/Testimonial";
 import Newsletter from "../components/HomePage/Newsletter";
 import SiteStats from "../components/HomePage/SiteStats";
 import AuthorOfTheMonth from "../components/HomePage/AuthorOfTheMonth";
+import { useState } from 'react';
+import {getSession, signOut, useSession} from "next-auth/react";
+import Link from "next/link";
 import BrandArea from "../components/HomePage/BrandArea";
 
-export default function Home() {
 
+export default function Home() {
+ 
   return (
     <>
    <Head>
@@ -32,18 +36,17 @@ export default function Home() {
 			<main className="bg-base-100">
 				<Header></Header>
         <MainHero></MainHero>
-        
         <BooksOfTheMonth></BooksOfTheMonth>
         <SiteStats></SiteStats>
         <AuthorOfTheMonth></AuthorOfTheMonth>
         <Service></Service>
         <BestSellers></BestSellers>
-         <HowDoesItWorks></HowDoesItWorks>
-        <BrandArea></BrandArea>
-         <BooksCategories></BooksCategories>
+        <HowDoesItWorks></HowDoesItWorks>
+        <BooksCategories></BooksCategories>
         <ApplyForTeacher></ApplyForTeacher>
         <PricingPlans></PricingPlans>
         <Testimonial></Testimonial>
+        <BrandArea></BrandArea>
         <Newsletter></Newsletter>
 				<Footer></Footer>
 			</main>

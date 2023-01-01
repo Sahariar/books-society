@@ -3,9 +3,11 @@ import { useState } from "react";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import { getUsers } from "../../api/users";
 
-const index = () => {
+const index = ({usersData}) => {
   const [close, setClose] = useState(false);
+  console.log(usersData);
   return (
     <>
       <Head>
@@ -63,3 +65,23 @@ const index = () => {
 };
 
 export default index;
+
+export async function getStaticProps() {
+	try {
+		const usersData = await getUsers();
+		if (!usersData) {
+			return {
+				notFound: true,
+				revalidate: 60,
+			};
+		}
+		return {
+			props: {
+				usersData: JSON.parse(JSON.stringify(usersData)),
+			},
+			revalidate: 60,
+		};
+	} catch (error) {
+		console.log(error);
+	}
+}

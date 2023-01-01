@@ -1,6 +1,6 @@
 import clientPromise from "../../../lib/mongodb";
 
-export const getBooks = async () =>{
+export const getOTMBooks = async () =>{
 
   const client = await clientPromise;
   let query = {
@@ -14,7 +14,7 @@ export const getBooks = async () =>{
 export default async function handler(req, res) {
     const client = await clientPromise;
     const booksCollection = client.db("booksdb").collection('bsCollect');
-      const allBooks = await getBooks();
+      const allBooks = await getOTMBooks();
       res?.json({ status: 200, bOTMData: allBooks });
 
   

@@ -3,11 +3,16 @@ import '../styles/dashboard.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
+import {SessionProvider} from 'next-auth/react'
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, [])
-  return <Component {...pageProps} />
+  return(
+    <SessionProvider session={pageProps.session}>
+  <Component {...pageProps} />
+  </SessionProvider>
+  )
 }

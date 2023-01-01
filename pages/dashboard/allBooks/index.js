@@ -71,24 +71,4 @@ const index = ({booksData}) => {
   );
 };
 
-export async function getStaticProps() {
-	try {
-		const booksData = await getBooks();
-		if (!booksData) {
-			return {
-				notFound: true,
-				revalidate: 60,
-			};
-		}
-		return {
-			props: {
-				booksData: JSON.parse(JSON.stringify(booksData)),
-			},
-			revalidate: 60,
-		};
-	} catch (error) {
-		console.log(error);
-	}
-}
-
 export default index;

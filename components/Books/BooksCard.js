@@ -25,13 +25,13 @@ const BooksCard = ({bookData}) => {
                             <BsStar className="text-amber-400" size={22}/>
                             </span>	Ratting :
 						</h5>
-						<p className="text-lg px-2"><ReviewStar reviewScore={average_rating}></ReviewStar></p>
+						<div className="text-lg px-2"><ReviewStar reviewScore={average_rating}></ReviewStar></div>
 					</div>
            
-            <div className="card-actions">
-                <button className="btn btn-primary btn-block">
-                    <Link href={`/books/${_id}`}>Read More</Link> 
-                    </button>
+            <div className="card-actions justify-center items-end align-bottom mt-4">
+               
+                    <Link href={`/books/${_id}`}> <button className="btn btn-primary btn-wide">Read More  </button></Link> 
+                   
             </div>
         </div>
     </div>

@@ -4,9 +4,9 @@ import Sidebar from "../../components/Dashboard/Sidebar";
 import FeatureSide from "../../components/Dashboard/FeatureSide";
 import { useState } from "react";
 
-
 const index = () => {
   const [close, setClose] = useState(false);
+
   return (
     <>
       <Head>
@@ -20,10 +20,10 @@ const index = () => {
           <Sidebar/>
         </div>
         <section className="grid grid-cols-8 w-full">
-          <div className="col-span-5">
+          <div className="col-span-6">
           <Header close={close} setClose={setClose}></Header>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-2">
             <FeatureSide />
           </div>
         </section>
