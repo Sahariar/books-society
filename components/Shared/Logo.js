@@ -1,7 +1,8 @@
+import Link from "next/link"
+
 const Logo = ({ width, height, color }) => {
 	return (
-		<>
-			<a className="normal-case text-xl">
+		<><Link href={'/'} className="normal-case text-xl">
 				<span className="flex items-center gap-2 font-bold text-indigo-900">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,7 @@ const Logo = ({ width, height, color }) => {
 						Books Society
 					</span>
 				</span>
-			</a>
+				</Link>
 		</>
 	);
 };

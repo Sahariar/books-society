@@ -67,7 +67,7 @@ const Header = () => {
 	function handleSignout(){
 	  signOut()
 	}
-	console.log(session?.user.email);
+	console.log(session?.user);
 	return (
 		<header className="header-area bg-neutral text-white">
 			{/* <div className="top-navbar-area ">

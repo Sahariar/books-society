@@ -9,6 +9,7 @@ import { registerValidate } from "../../lib/validate";
 import { useRouter } from "next/router";
 import CustomSelect from "./CustomSelect";
 import Spacer from "../../components/Shared/Spacer";
+import { toast } from "react-toastify";
 
 const index = () => {
 	const [show, setShow] = useState({ password: false, cpassword: false });
@@ -21,6 +22,7 @@ const index = () => {
 		{ value: "student", label: "Student" },
 		{ value: "teacher", label: "Teacher" },
 	];
+	const router  =useRouter();
 	const formik = useFormik({
 		initialValues: {
 			username: "",
@@ -35,6 +37,7 @@ const index = () => {
 	});
 	async function onSubmit(values) {
 		console.log(values);
+		toast.info('Submission Processing');	
 		const options = {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
@@ -43,7 +46,10 @@ const index = () => {
 		await fetch("/api/auth/signup", options)
 			.then((res) => res.json())
 			.then((data) => {
-				if (data) router.push("/");
+				if (data) {
+					toast.success('Registration Success');	
+					router.push("/");
+				}
 			});
 	}
 	return (

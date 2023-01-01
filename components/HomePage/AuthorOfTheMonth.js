@@ -21,7 +21,7 @@ const AuthorOfTheMonth = () => {
 				</div>
                 </div>
                 <div className="w-full lg:w-6/12 p-2" data-aos="fade-left">
-                <div className="p-20">
+                <div className=" p-5 lg:p-20">
 						<div className="pb-12">
 						<h1 className="text-4xl font-bold pb-3">About Bella Mackie</h1>
 					<Spacer></Spacer>
@@ -31,7 +31,7 @@ const AuthorOfTheMonth = () => {
                         Bella Mackie is a former journalist who previously worked for The Guardian and Vice News. She writes a twice monthly Vogue column. Her first book, Jog On, was a memoir about mental health and running. It was a number two bestseller (just underneath Michelle Obama, which is a hallowed spot).</p>
                             
 						<div className="mt-10 mx-auto">
-							<button className="btn btn-primary rounded-lg w-1/2 mx-auto text-center">
+							<button className="btn btn-primary rounded-lg lg:w-1/2 w-full mx-auto text-center">
 								See Author Books
 							</button>
 						</div>

@@ -12,7 +12,7 @@ const HomeCard = ({ book }) => {
                             src={picture}
                             width="243"
                             height="380" 
-							className="h-96 rounded-lg border-2"
+							className="h-full xl:h-96 rounded-lg border-2 object-fill"
                             alt={title}
                             />
 			</figure>

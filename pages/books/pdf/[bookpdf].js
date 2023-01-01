@@ -61,7 +61,7 @@ const bookpdf = ({ pdfLink }) => {
 			npdfLink = ""
 			break;
 	}
-	console.log(id , npdfLink);
+
 	return (
 		<>
 			<Head>

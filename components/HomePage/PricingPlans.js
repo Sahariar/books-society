@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {FaCheck} from 'react-icons/fa';
 import Spacer from '../Shared/Spacer';
 const PricingPlans = () => {
@@ -27,7 +28,9 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;Access 7 days</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-primary rounded w-1/2'>Subscribe Now</button>
+                    <Link href={'/register'}>
+                        <button className='btn btn-primary rounded w-full lg:w-1/2'>Subscribe Now</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -44,7 +47,10 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;One To one Chat options</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-primary rounded w-1/2'>Subscribe Now</button>
+                        <Link href={'/register'}>
+                        <button className='btn btn-primary rounded w-full lg:w-1/2'>Subscribe Now</button>
+                        </Link>
+                        
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-10 price-plan">
@@ -61,7 +67,9 @@ const PricingPlans = () => {
                         <li className="flex items-center text-base mb-2"><FaCheck className='text-primary'/>&nbsp;&nbsp;One To one Chat options</li>
                     </ul>
                     <div className='text-center mt-5'>
-                        <button className='btn btn-primary rounded w-1/2'>Subscribe Now</button>
+                    <Link href={'/register'}>
+                        <button className='btn btn-primary rounded w-full lg:w-1/2'>Subscribe Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>

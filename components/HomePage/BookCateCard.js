@@ -12,7 +12,7 @@ const BookCateCard = ({book}) => {
         <>
         <Link href={`books/category/${category_id}`}>
       
-           	<div className="card items-center border-2 w-80 pb-10 bg-base-100/70 hover:shadow-xl">
+           	<div className="card items-center border-2 xl:w-80 pb-10 bg-base-100/70 hover:shadow-xl mx-auto">
 					<div className="avatar">
 						<div className="w-80 h-80">
                             <Image 
