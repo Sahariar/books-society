@@ -3,10 +3,12 @@ import { useState } from "react";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import { getBooks } from "../../api/books";
 
 
-const index = () => {
+const index = ({booksData}) => {
   const [close, setClose] = useState(false);
+  console.log(booksData);
   return (
     <>
       <Head>
@@ -23,8 +25,8 @@ const index = () => {
             <Header close={close} setClose={setClose}></Header>
             <div className="m-6">
                 <h1 className="text-2xl pb-5 rounded-md">All Books</h1>
-                <div className="overflow-x-auto">
-                  <table className="table w-full">
+                <div className="overflow-auto">
+                  <table className="dash_table">
                     <thead>
                       <tr>
                         <th>SL</th>
@@ -32,73 +34,33 @@ const index = () => {
                         <th>Author</th>
                         <th>Books of the Month</th>
                         <th>Is Best Seller</th>
-                        <th className="w-10">Actions</th>
+                        <th>Actions</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                          <select className="select w-full bg-white" defaultValue={0}>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                          </select>
-                        </td>
-                        <td>
-                          <select className="select w-full bg-white" defaultValue={0}>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                          </select>
-                        </td>
-                        <td>
-                          <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
-                          <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                          <select className="select w-full bg-white" defaultValue={0}>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                          </select>
-                        </td>
-                        <td>
-                          <select className="select w-full bg-white" defaultValue={0}>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                          </select>
-                        </td>
-                        <td>
-                          <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
-                          <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                          <select className="select w-full bg-white" defaultValue={0}>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                          </select>
-                        </td>
-                        <td>
-                          <select className="select w-full bg-white" defaultValue={0}>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                          </select>
-                        </td>
-                        <td>
-                          <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
-                          <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
-                        </td>
-                      </tr>
+                      {
+                        booksData.map((book, i) =><tr>
+                          <td>{i + 1}</td>
+                          <td>{book?.title}</td>
+                          <td>{book?.author_name}</td>
+                          <td>
+                            <select className="select w-full bg-white" defaultValue={0}>
+                              <option value="1">Yes</option>
+                              <option value="0">No</option>
+                            </select>
+                          </td>
+                          <td>
+                            <select className="select w-full bg-white" defaultValue={0}>
+                              <option value="1">Yes</option>
+                              <option value="0">No</option>
+                            </select>
+                          </td>
+                          <td>
+                            <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
+                            <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
+                          </td>
+                        </tr>)
+                      }
                     </tbody>
                   </table>
                 </div>
@@ -108,5 +70,25 @@ const index = () => {
     </>
   );
 };
+
+export async function getStaticProps() {
+	try {
+		const booksData = await getBooks();
+		if (!booksData) {
+			return {
+				notFound: true,
+				revalidate: 60,
+			};
+		}
+		return {
+			props: {
+				booksData: JSON.parse(JSON.stringify(booksData)),
+			},
+			revalidate: 60,
+		};
+	} catch (error) {
+		console.log(error);
+	}
+}
 
 export default index;
