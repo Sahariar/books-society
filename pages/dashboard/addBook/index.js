@@ -23,7 +23,7 @@ const index = () => {
             <Header close={close} setClose={setClose}></Header>
             <div>
                 {/* Your code will go here and you can remove the h1 bellow. */}
-                <h1 className="text-5xl m-6 p-5 rounded-md bg-base-100/60 w-full max-w-[80%] p-8 ml-10 space-y-3 bg-base-100/60">Add Book</h1>
+                <h1 className="text-5xl m-6 p-5 rounded-md bg-base-100/60 w-full max-w-[80%]  ml-10 space-y-3">Add Book</h1>
             </div>
 
             <div className="form-area">

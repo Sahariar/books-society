@@ -27,7 +27,7 @@ const BooksOfTheMonth = () => {
 			<div className="container mx-auto pb-10">
 				<div className="flex flex-col-reverse xl:flex-row">
 					<div className="w-full p-2">
-						<div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 							{
 								bookData?.map( book => <HomeCard
 								key={book._id}

@@ -6,7 +6,7 @@ import Image from "next/image";
 const HomeCard = ({ book }) => {
 	const { picture, title, author_name, description, average_rating  , _id} = book;
 	return (
-		<div className="card xl:card-side hover:shadow-xl border-2">
+		<div className="card xl:card-side hover:shadow-xl border-2" data-aos="fade-up">
 			<figure className="xl:w-4/12 ">
 			<Image 
                             src={picture}

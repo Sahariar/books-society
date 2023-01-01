@@ -15,12 +15,12 @@ const AuthorOfTheMonth = () => {
 
         <div className="container mx-auto pb-10">
             <div className="flex flex-col-reverse xl:flex-row">
-                <div className="w-6/12 p-2">
+                <div className="w-full lg:w-6/12 p-2" data-aos="fade-right">
                 <div className="mx-auto">
 						<Image className="rounded-lg my-6 border-4 border-primary bg-secondary/40 mx-auto" src='https://i.ibb.co/znmFwxX/belle.jpg' width={600} height={600} alt="teacher" />
 				</div>
                 </div>
-                <div className="w-6/12 p-2">
+                <div className="w-full lg:w-6/12 p-2" data-aos="fade-left">
                 <div className="p-20">
 						<div className="pb-12">
 						<h1 className="text-4xl font-bold pb-3">About Bella Mackie</h1>

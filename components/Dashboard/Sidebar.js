@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../components/Shared/Logo";
 import {AiFillWechat, AiOutlineBook, AiOutlineDashboard, AiOutlineLogout, AiOutlineMessage, AiOutlinePlus, AiOutlineUnorderedList, AiOutlineUserAdd, AiOutlineUsergroupAdd} from 'react-icons/ai';
+import { signOut } from "next-auth/react";
 
 const Sidebar = () => {
     const router = useRouter();
