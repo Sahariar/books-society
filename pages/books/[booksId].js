@@ -10,6 +10,9 @@ import Spacer from "../../components/Shared/Spacer";
 // import PdfViewer from "../../components/Books/Pdf/PdfViewer";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import Policy from "../../components/Policy/policy";
+// import AddReviewForm from "../../components/AddReviewForm/AddReviewForm";
+
 
 const booksDetails = ({ bookInfo }) => {
 	const router = useRouter();
@@ -146,7 +149,8 @@ const booksDetails = ({ bookInfo }) => {
 					</div>
 				</section>
 			</main>
-
+			{/* <AddReviewForm></AddReviewForm> */}
+       <Policy></Policy>
 			<Footer></Footer>
 		</>
 	);
