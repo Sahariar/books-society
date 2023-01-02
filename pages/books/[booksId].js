@@ -10,6 +10,7 @@ import Spacer from "../../components/Shared/Spacer";
 // import PdfViewer from "../../components/Books/Pdf/PdfViewer";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import ShareBook from "../../components/Shared/ShareBook";
 
 const booksDetails = ({ bookInfo }) => {
 	const router = useRouter();
@@ -144,6 +145,7 @@ const booksDetails = ({ bookInfo }) => {
 							</div>
 						</div>
 					</div>
+				
 				</section>
 			</main>
 

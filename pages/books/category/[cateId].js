@@ -19,7 +19,6 @@ const categoryDetails = () => {
 	if (error) return <div>failed to load</div>
 	if (!data) return <Loading></Loading>
 	const booksData = data.bookData
-	console.log(booksData , id);
 	
 	// If the page is not yet generated, this will be displayed
 	// initially until getStaticProps() finishes running

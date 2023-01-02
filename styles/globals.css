@@ -82,11 +82,19 @@ h1,h2,h3,h4,h5,h6{
 .bs-shape .shape-fill {
     fill: #F5F5F4;
 }
-
+.chart-ar{
+    width: 396px;
+}
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
     .bs-shape svg {
         width: calc(148% + 1.3px);
         height: 84px;
+    }
+  
+}
+@media (min-width: 768px) {
+    .chart-ar{
+        width: 800px;
     }
 }

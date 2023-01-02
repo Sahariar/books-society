@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Spacer from "../Shared/Spacer";
 
 const AuthorOfTheMonth = () => {
@@ -31,9 +32,11 @@ const AuthorOfTheMonth = () => {
                         Bella Mackie is a former journalist who previously worked for The Guardian and Vice News. She writes a twice monthly Vogue column. Her first book, Jog On, was a memoir about mental health and running. It was a number two bestseller (just underneath Michelle Obama, which is a hallowed spot).</p>
                             
 						<div className="mt-10 mx-auto">
+                            <Link href={'/author/63aea714ef8c2f29f5b59c0f'}>
 							<button className="btn btn-primary rounded-lg lg:w-1/2 w-full mx-auto text-center">
 								See Author Books
 							</button>
+                            </Link>
 						</div>
 					</div>
                 </div>
