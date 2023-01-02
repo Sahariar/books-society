@@ -1,6 +1,5 @@
 import useSWR from 'swr'
 import axios from 'axios'
-
 import HomeCard from './HomeCard';
 import Loading from '../Shared/Loading';
 import Spacer from '../Shared/Spacer';

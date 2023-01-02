@@ -6,6 +6,7 @@ import Footer from "../../../components/Shared/Footer";
 import { Router, useRouter } from "next/router";
 import Loading from "../../../components/Shared/Loading";
 import Spacer from "../../../components/Shared/Spacer";
+import { getSession } from "next-auth/react";
 
 const bookpdf = ({ pdfLink }) => {
 	const PDFViewer = dynamic(
@@ -21,40 +22,40 @@ const bookpdf = ({ pdfLink }) => {
 	}
 	let npdfLink;
 	switch (id) {
-		case "63b0849f61b4f157cdc75b03":
+		case "63b26764f388c893a41b7672":
 			npdfLink = "/pdf/give.pdf"
 			break;
-		case '63b0849f61b4f157cdc75b04':
+		case '63b26764f388c893a41b7676':
 			npdfLink = "/pdf/badass.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b05":
+		case "63b26764f388c893a41b7678":
 			npdfLink = "/pdf/what.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b06":
+		case "63b26764f388c893a41b767a":
 			npdfLink = "/pdf/Stop_Worrying.pdf"
 			break;
-		case "63ad77a4ef8c2f29f518b6a7":
+		case "63b26764f388c893a41b767a":
 			npdfLink = "/pdf/living.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b08":
+		case "63b26764f388c893a41b767e":
 			npdfLink = "/pdf/Hillbilly.pdf"
 			break;
-		case '63b0849f61b4f157cdc75b09':
+		case '63b26764f388c893a41b7680':
 			npdfLink = "/pdf/theArtofWar.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b0a":
+		case "63b26764f388c893a41b7683":
 			npdfLink = "/pdf/yoga.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b0b":
+		case "63b26764f388c893a41b7686":
 			npdfLink = "/pdf/Howtokill.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b0c":
+		case "63b26764f388c893a41b7688":
 			npdfLink = "/pdf/miracle.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b0d":
+		case "63b26764f388c893a41b768a":
 			npdfLink = "/pdf/drawing.pdf"
 			break;
-		case "63b0849f61b4f157cdc75b07":
+		case "63b26764f388c893a41b767d":
 			npdfLink = "/pdf/living.pdf"
 			break;
 		default:
@@ -102,3 +103,22 @@ const bookpdf = ({ pdfLink }) => {
 
 
 export default bookpdf;
+
+
+export async function getServerSideProps({req}){
+
+	const session=await getSession({req})
+	if(!session){
+	 return{
+	   redirect:{
+		 destination: '/login',
+	   permanent:false
+	 }
+	 }
+	}
+	return {
+	 props:{
+		userData:{...session}
+	  }
+	}
+  }

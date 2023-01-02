@@ -67,7 +67,6 @@ const Header = () => {
 	function handleSignout(){
 	  signOut()
 	}
-	console.log(session?.user);
 	return (
 		<header className="header-area bg-neutral text-white">
 			{/* <div className="top-navbar-area ">
@@ -172,11 +171,15 @@ const Header = () => {
 						{session ? (
 						<div className="flex items-center">
 						<div className="dropdown dropdown-end">
-							<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+						
+							{/* <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 								<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
 									<img src={"https://placeimg.com/80/80/people"} className="ring-" />
 								</div>
-							</label>
+							</label> */}
+							 <label tabIndex={0} className="btn w-32 btn-ghost btn-circle avatar">
+							 <span className="btn btn-primary btn-outline">{session?.user.email.slice(0 ,-10)}</span>
+							</label> 
 							<ul
 								tabIndex={0}
 								className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-neutral"
