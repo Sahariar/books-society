@@ -1,5 +1,15 @@
+import Head from "next/head";
+import Header from "../../components/Dashboard/Header";
+import Sidebar from "../../components/Dashboard/Sidebar";
+import FeatureSide from "../../components/Dashboard/FeatureSide";
+import { useState } from "react";
+import { getSession } from "next-auth/react";
+import Books from "../../components/Dashboard/Chart/Books";
+
+import Mixed from "../../components/Dashboard/Chart/Mixed";
 
 const profile = () => {
+    const [close, setClose] = useState(false);    
     return (
         <>
         <Head>
