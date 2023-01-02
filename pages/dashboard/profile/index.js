@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Header from "../../components/Dashboard/Header";
-import Sidebar from "../../components/Dashboard/Sidebar";
-import FeatureSide from "../../components/Dashboard/FeatureSide";
 import { useState } from "react";
-import { getSession } from "next-auth/react";
-import Books from "../../components/Dashboard/Chart/Books";
+import { getSession, useSession } from "next-auth/react";
+import Header from "../../../components/Dashboard/Header";
+import Sidebar from "../../../components/Dashboard/Sidebar";
+import FeatureSide from "../../../components/Dashboard/FeatureSide";
 
-import Mixed from "../../components/Dashboard/Chart/Mixed";
 
 const profile = () => {
     const [close, setClose] = useState(false);    
+    const{data:session}=useSession()
+    
     return (
         <>
         <Head>
@@ -31,16 +31,23 @@ const profile = () => {
             <section className="grid grid-cols-8 w-full">
                 <div className="col-span-6">
                     <Header close={close} setClose={setClose}></Header>
-        
-                    <div className="flex flex-col justify-center">
-        <div className="card  bg-base-100/30 shadow-lg rounded-lg m-10 p-3">
-                            <Books></Books>
+                
+                <div className="user-info">
+                    <div className="card rounded-lg shadow-lg w-1/2 mx-auto p-10 my-10">
+                        <div className="flex ">
+                        <div className="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+									<img src={"https://placeimg.com/80/80/people"} className="ring-primary rounded-full" />
+						</div>
+               <div className="info ml-5">
+               <h2 className="text-2xl"> User Name :  {session?.user.email.slice(0 ,-10)}</h2>
+                <h2 className="text-2xl"> User Email :  {session?.user.email}</h2>
+               </div>
                         </div>
-                        <div className="card bg-base-100/30 shadow-lg rounded-lg m-10 p-3">
-          <Mixed></Mixed>
-                        </div>
-                        
+                
+                 
                     </div>
+               
+                </div>
  
                 </div>
 
