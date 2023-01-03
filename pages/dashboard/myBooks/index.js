@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "../../../components/Dashboard/Header";
 import Sidebar from "../../../components/Dashboard/Sidebar";
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import Link from "next/link";
 
 
 const index = () => {
@@ -27,23 +28,34 @@ const index = () => {
                   <table className="table w-full">
                     <thead>
                       <tr>
-                        <th>SL</th>
-                        <th>Book Name</th>
-                        <th>Author</th>
-                        <th>ISBN No</th>
-                        <th className="w-10">Actions</th>
+                        <th className="bg-secondary/10">SL</th>
+                        <th className="bg-secondary/10">Book Name</th>
+                        <th className="bg-secondary/10">Author</th>
+                        <th className="bg-secondary/10">Complete</th>
+                        <th className="w-10 bg-secondary/10">Actions</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                          <button title="Edit" className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"><FaEdit/></button>
-                          <button title="Delete" className="btn btn-sm btn-error bg-red-600"><FaTrash/></button>
-                        </td>
+                        <td className="bg-primary/10">1</td>
+                        <td className="bg-primary/10">The Art of War: Complete Text and Commentaries</td>
+                        <td className="bg-primary/10">Sun Tzu</td>
+                        <td className="bg-primary/10">No</td>
+                        <td className="bg-primary/10"><Link href={'/book'}  className="btn btn-primary mx-2 btn-block"> Read</Link></td>
+                      </tr>
+                      <tr>
+                        <td className="bg-primary/10">2</td>
+                        <td className="bg-primary/10">How To Stop Worrying And Start Living</td>
+                        <td className="bg-primary/10">Dale Carnegie	</td>
+                        <td className="bg-primary/10">No</td>
+                        <td className="bg-primary/10"><Link href={'/book'}  className="btn btn-primary mx-2 btn-block"> Read</Link></td>
+                      </tr>
+                      <tr>
+                        <td className="bg-primary/10">3</td>
+                        <td className="bg-primary/10">Purchasing and Supply Chain Management</td>
+                        <td className="bg-primary/10">	Brian Fairrington</td>
+                        <td className="bg-primary/10">Yes</td>
+                        <td className="bg-primary/10"><Link href={'/book'}  className="btn btn-primary mx-2 btn-block">Read Again</Link></td>
                       </tr>
                       
                     </tbody>

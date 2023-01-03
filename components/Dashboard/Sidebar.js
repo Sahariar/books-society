@@ -20,11 +20,12 @@ const Sidebar = () => {
                
             </div>
             <div className="flex items-center p-2 space-x-4">
-                {/* <img src="https://placeimg.com/80/80/people" alt="" className="w-12 h-12 rounded-full " /> */}
+                <img src="https://i.ibb.co/xm2hjv2/linkedin.jpg" alt="" className="w-12 h-12 rounded-full " />
                 <div>
                     <h2 className="text-lg font-semibold">{session?.user.email.slice(0 ,-10)}</h2>
                     <span className="flex items-center space-x-1">
-                        <a rel="noopener noreferrer" href="#" className="text-xs hover:underline dark:text-gray-400">View profile</a>
+                        <Link href={'/dashboard/profile'} className="text-xs hover:underline dark:text-gray-400">View Profile</Link>
+               
                     </span>
                 </div>
             </div>
