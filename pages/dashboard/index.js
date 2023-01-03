@@ -10,7 +10,6 @@ import Cate from "../../components/Dashboard/Chart/Cate";
 import Mixed from "../../components/Dashboard/Chart/Mixed";
 const index = () => {
 	const [close, setClose] = useState(false);
-
 	return (
 		<>
 			<Head>
@@ -34,10 +33,18 @@ const index = () => {
 						<Header close={close} setClose={setClose}></Header>
             
 						<div className="flex flex-col justify-center">
-            <div className="card  bg-base-100/30 shadow-lg rounded-lg m-10 p-3">
+						<div className="card rounded-lg shadow-lg mx-auto p-10 m-10 w-10/12 ">
+                   
+            <div className="card  bg-base-100/20 shadow-lg rounded-lg m-10 p-3">
 								<Books></Books>
 							</div>
-							<div className="card bg-base-100/30 shadow-lg rounded-lg m-10 p-3">
+							<div className="py-10 bg-base-100/20">
+									<h2 className="text-2xl text-center">Average Spending Time</h2>
+								</div>
+                          
+                        <Cate></Cate>
+                        </div>
+							<div className="card bg-base-100/20 shadow-lg rounded-lg m-10 p-3">
               <Mixed></Mixed>
 							</div>
 							

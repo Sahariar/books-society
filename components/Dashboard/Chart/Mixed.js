@@ -76,10 +76,10 @@ const Mixed = () => {
 					<YAxis />
 					<Tooltip />
 					<Legend />
-					<Area type="monotone" dataKey="amt" fill="#FFCA42" stroke="#F6F8FC" />
-					<Bar dataKey="pv" barSize={20} fill="#222222" />
+					<Area type="monotone" dataKey="amt" fill="#E9F3FB" stroke="#F6F8FC" />
+					<Bar dataKey="pv" barSize={20} fill="#268dd6" />
 					<Line type="monotone" dataKey="uv" stroke="#FFCA42" />
-					<Scatter dataKey="cnt" fill="#28B8A5" />
+					<Scatter dataKey="cnt" fill="#FFCA42" />
 				</ComposedChart>
 			</ResponsiveContainer>
 		</div>
