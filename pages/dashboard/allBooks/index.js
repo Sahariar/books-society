@@ -35,81 +35,49 @@ const index = ({ booksData }) => {
 							<table className="table w-full">
 								<thead>
 									<tr>
-										<th>SL</th>
-										<th>Book Image</th>
-										<th>Book Name</th>
+										<th className="bg-secondary/10">SL</th>
+										<th className="bg-secondary/10">Book Image</th>
+										<th className="bg-secondary/10">Book Name</th>
 										
-										<th>Author</th>
-										<th>Is Best Seller</th>
-										<th className="w-10">Actions</th>
+										<th className="bg-secondary/10">Author</th>
+										<th className="bg-secondary/10">Is Best Seller</th>
+										<th className="w-10 bg-secondary/10">Actions</th>
 									</tr>
 								</thead>
 								<tbody>
 									{booksData.map( (book, index) => <tr key={book._id}>
-										<td>{index + 1}</td>
-										<td><Image
+										<td className="bg-primary/10">{index + 1}</td>
+										<td className="bg-primary/10"><Image
 										 src={book.picture}
 										 width={50}
 										 height={100}
 										 alt={book.title}
 										 >
 											</Image></td>
-										<td>{book.title}</td>
+										<td className="bg-primary/10">{book.title}</td>
 									
-										<td>{book.author_name}</td>
-										<td>
+										<td className="bg-primary/10">{book.author_name}</td>
+										<td className="bg-primary/10">
 											<select
-												className="select w-full bg-white"
+												className="select w-full bg-primary/10"
 												defaultValue={0}
 											>
 												<option value="1">Yes</option>
 												<option value="0">No</option>
 											</select>
 										</td>
-										<td>
+										<td className="bg-primary/10">
 											<button
 												title="Edit"
-												className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"
+												className=" mr-2"
 											>
 												<FaEdit />
 											</button>
-											<button title="Delete" className="btn btn-sm btn-error">
+											<button title="Delete" className="text-red-600">
 												<FaTrash />
 											</button>
 										</td>
 									</tr>)}
-									
-
-									{/* <tr>
-										<td>3</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td>
-											<select
-												className="select w-full bg-white"
-												defaultValue={0}
-											>
-												<option value="1">Yes</option>
-												<option value="0">No</option>
-											</select>
-										</td>
-										<td>
-											<button
-												title="Edit"
-												className="btn btn-sm btn-warning mr-2 text-white hover:bg-orange-400"
-											>
-												<FaEdit />
-											</button>
-											<button
-												title="Delete"
-												className="btn btn-sm btn-error bg-red-600"
-											>
-												<FaTrash />
-											</button>
-										</td>
-									</tr> */}
 								</tbody>
 							</table>
 						</div>
